@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<base href="/swgln-newsletter-oct-2026/">
+
+<title>South West Goulburn Landcare Newsletter, October 2026</title>
+<meta name="description" content="Forty years of Landcare in Euroa, four fruit fly posters, the Lyndale Park field day, and what is on to December.">
+<meta property="og:title" content="South West Goulburn Landcare Newsletter, October 2026">
+<meta property="og:description" content="Forty years of Landcare in Euroa, four fruit fly posters, the Lyndale Park field day, and what is on to December.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#3f6b1f">
+<style>
+/* ==========================================================================
+   SWGLN newsletter, October 2026. Web stylesheet.
+   Rebuilt 19 October 2026. build.js inlines this file into web/index.html.
+   Sections: 1 tokens, 2 base, 3 links and buttons, 4 layout and contents,
+   5 masthead and intro, 6 article furniture, 7 figures, 8 display numerals,
+   9 article treatments, 10 groups spread, 11 what's on, 12 ads, 13 footer,
+   14 responsive, 15 motion.
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&display=swap');
+
+/* 1 tokens ---------------------------------------------------------------- */
+:root{
+ --g:#75a538;          /* brand green */
+ --gd:#3f6b1f;         /* text green on light grounds */
+ --gdd:#24401a;        /* deep green panels */
+ --gh:#2f5316;         /* button hover */
+ --cream:#f6f3ea;      /* alternate section ground */
+ --pap:#fff;
+ --ink:#14180f;--body:#2c3123;--mut:#5d6454;--rule:#dcd7c9;
+ --plum:#8a084e;--vs:#1B4424;--vsa:#50844F;
+ --disp:'Libre Bodoni',Georgia,serif;
+ --ui:'Public Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;
+ --txt:'Source Serif 4',Georgia,serif;
+ --s1:24px;--s2:32px;--s3:48px;--s4:64px;--s5:96px;
+ --gut:24px;           /* side gutter */
+ --max:1080px;         /* 12 column grid width */
+ --measure:68ch;
+ --toc:236px;
+ --t:200ms;
+}
+
+/* 2 base ------------------------------------------------------------------ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}
+body{margin:0;background:var(--pap);color:var(--body);font:400 17px/1.6 var(--txt);
+ font-optical-sizing:auto;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4,p,li,dd,dt,figcaption,blockquote{overflow-wrap:break-word}
+img,svg{max-width:100%;height:auto;display:block}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200}
+.skip:focus{left:12px;top:12px}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--g);width:0;z-index:99}
+mark.pending{background:#fff3a3;color:inherit;padding:0 3px}
+
+/* 3 links and buttons ----------------------------------------------------- */
+a{color:var(--gd);text-decoration-thickness:1px;text-underline-offset:3px;
+ transition:color var(--t),text-decoration-color var(--t),background-color var(--t)}
+a:hover{color:var(--gh);text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--g);outline-offset:3px;border-radius:2px}
+.btn{display:inline-block;background:var(--gd);color:#fff;text-decoration:none;
+ font:600 15.5px/1.2 var(--ui);padding:14px 22px;border:2px solid var(--gd);border-radius:3px;
+ transition:background-color var(--t),border-color var(--t),color var(--t)}
+.btn:hover{background:var(--gh);border-color:var(--gh);color:#fff}
+.btn:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--gd)}
+.btn.ghost:hover{background:var(--gd);color:#fff}
+.btn.light{background:var(--cream);border-color:var(--cream);color:var(--gdd)}
+.btn.light:hover{background:#fff;border-color:#fff;color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin:var(--s1) 0 0}
+
+/* 4 layout and contents --------------------------------------------------- */
+.in{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sec{padding:var(--s4) 0}
+.sec.pap{background:var(--pap)}
+.sec.cream{background:var(--cream)}
+.sec + .sec.pap{border-top:1px solid var(--rule)}
+.layout{display:block}
+.toc-side{display:none}
+.toc-m{background:var(--cream);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.toc-m summary{cursor:pointer;list-style:none;padding:16px var(--gut);font:600 13px/1 var(--ui);
+ font-variant:all-small-caps;letter-spacing:.14em;font-size:17px;color:var(--gd);display:flex;justify-content:space-between}
+.toc-m summary::-webkit-details-marker{display:none}
+.toc-m summary::after{content:'+';font:400 22px/0.7 var(--ui)}
+.toc-m details[open] summary::after{content:'\2212'}
+.toc-m ol{list-style:none;margin:0;padding:0 var(--gut) 16px}
+.toc-m li a{display:block;padding:10px 0;border-top:1px solid var(--rule);font:500 16px/1.35 var(--ui);color:var(--ink);text-decoration:none}
+.toc-m li a:hover{color:var(--gd)}
+.sec .totoc{margin:var(--s3) 0 0;font:500 14px/1 var(--ui)}
+.totoc a{color:var(--mut);text-decoration:none}
+.totoc a::before{content:'\2191\00a0'}
+.totoc a:hover{color:var(--gd)}
+
+/* 5 masthead and intro ---------------------------------------------------- */
+.mast{background:var(--pap)}
+.mast-bar{padding:var(--s1) var(--gut) 20px;max-width:1280px;margin:0 auto}
+.banner{width:100%;max-width:440px;margin:0 auto}
+.mast-hero{position:relative;max-width:1280px;margin:0 auto}
+.mast-photo{margin:0}
+.mast-photo img{width:100%;aspect-ratio:1600/699;object-fit:cover}
+.mast-photo figcaption{margin:0;padding:8px var(--gut);background:var(--gdd);color:#cfe3ae;font:400 12.5px/1.4 var(--ui);text-align:right;border-bottom:1px solid #35562a}
+.mast-photo figcaption .cap{color:#e9f1dc}
+.mast-photo .cr{color:#a9c48a}
+.mast-title{background:var(--gdd);color:#fff;padding:var(--s2) var(--gut) var(--s2)}
+.mast-title .kick{color:#cfe3ae;margin-bottom:12px}
+.mast-title h1{font:700 clamp(34px,6.4vw,68px)/1.02 var(--disp);letter-spacing:-.01em;margin:0;max-width:16ch}
+.intro{background:var(--cream);padding:var(--s3) 0}
+.subblock{display:grid;grid-template-columns:168px minmax(0,1fr);gap:var(--s2);align-items:start}
+.subblock img{width:168px;border:1px solid var(--rule);background:#fff}
+.subblock p{margin:0 0 14px;font-size:18px;line-height:1.6;max-width:var(--measure)}
+.subblock p.first::first-letter{float:left;font:700 60px/.8 var(--disp);color:var(--gd);margin:6px 10px 0 0}
+.subblock .acts{margin-top:8px}
+
+/* 6 article furniture ----------------------------------------------------- */
+.ah{margin:0 0 var(--s2);max-width:46rem}
+.kick{font:600 15px/1.2 var(--ui);font-variant:all-small-caps;letter-spacing:.16em;color:var(--gd);margin:0 0 12px}
+h2{font:700 clamp(30px,4.4vw,50px)/1.08 var(--disp);color:var(--ink);margin:0;letter-spacing:-.005em}
+.sec p{margin:0 0 1.1em;max-width:var(--measure)}
+.txt{max-width:var(--measure)}
+p.first::first-letter{float:left;font:700 64px/.8 var(--disp);color:var(--gd);margin:6px 10px 0 0}
+.dek{font:400 20px/1.5 var(--ui);color:var(--mut);max-width:44rem;margin:-12px 0 var(--s3)}
+h3.sub{font:600 21px/1.3 var(--ui);color:var(--ink);margin:var(--s2) 0 12px}
+blockquote.pq{margin:var(--s3) 0;padding:0 0 0 var(--s1);border-left:3px solid var(--g);max-width:40rem}
+blockquote.pq p{font:400 clamp(24px,2.8vw,32px)/1.3 var(--disp);color:var(--ink);margin:0;max-width:none}
+.greybox{background:#efede6;border:1px solid var(--rule);padding:var(--s1) 28px;max-width:var(--measure)}
+.greybox p{margin:0;font:400 17px/1.5 var(--ui);color:var(--mut)}
+
+/* 7 figures --------------------------------------------------------------- */
+figure{margin:0}
+figcaption{font:400 13.5px/1.5 var(--ui);color:var(--mut);margin-top:10px}
+figcaption .cap{color:var(--body)}
+figcaption .cr{color:var(--mut)}
+figure.lead{margin:calc(-1 * var(--s4)) 0 var(--s3)}
+figure.lead img{width:100%;aspect-ratio:16/7;object-fit:cover}
+figure.lead figcaption{max-width:var(--max);margin:10px auto 0;padding:0 var(--gut)}
+.poster img{border:1px solid var(--rule)}
+.pp-fig{margin:var(--s3) 0;max-width:640px}
+.pp-fig svg{width:100%;height:auto;border:1px solid var(--rule)}
+
+/* 8 display numerals ------------------------------------------------------ */
+dl.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s1);margin:0 0 var(--s3);
+ padding:var(--s1) 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+dl.stats div{min-width:0}
+dl.stats dt{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+dl.stats .n{font:700 clamp(36px,4.2vw,52px)/1 var(--disp);color:var(--gd)}
+dl.stats .u{font:600 15px/1 var(--ui);color:var(--gd)}
+dl.stats dd{margin:8px 0 0;font:400 14px/1.4 var(--ui);color:var(--mut)}
+.lib{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s1)}
+.lib-num{grid-column:1 / span 4;align-self:start;position:sticky;top:var(--s2)}
+.lib-num .n{display:block;font:700 clamp(96px,14vw,184px)/.86 var(--disp);color:var(--gd);letter-spacing:-.03em}
+.lib-num .l{display:block;font:600 18px/1.3 var(--ui);font-variant:all-small-caps;letter-spacing:.12em;color:var(--ink);margin-top:14px}
+.lib-text{grid-column:5 / span 8;min-width:0}
+
+/* 9 article treatments ---------------------------------------------------- */
+/* Forty years: text beside the invitation */
+.two{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s2)}
+.two .col-text{grid-column:1 / span 7;min-width:0}
+.two .col-fig{grid-column:8 / span 5;align-self:start}
+/* Fruit fly gallery */
+.fly-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s2);align-items:start}
+.fly-top .pf.big{grid-column:1 / span 6}
+.fly-top .fly-text{grid-column:7 / span 6;min-width:0}
+.fly-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s2);margin-top:var(--s3)}
+.pf-img{display:block;background:#fff;border:1px solid var(--rule);box-shadow:0 2px 8px rgba(20,24,15,.08);
+ transition:transform var(--t),box-shadow var(--t)}
+.pf-img:hover,.pf-img:focus-visible{transform:translateY(-4px);box-shadow:0 12px 26px rgba(20,24,15,.16)}
+.pf figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:14px}
+.pf-name{font:700 21px/1.2 var(--disp);color:var(--ink)}
+.pf.big .pf-name{font-size:28px}
+.pf-link{font:600 14px/1.3 var(--ui)}
+/* Dabyminga, Bendigo Bank plum */
+.sec.bbblock{background:var(--plum);color:#fff;padding-top:0}
+.bbstrip{background:#fff;padding:18px var(--gut);margin:0 0 var(--s3);display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;border-bottom:1px solid var(--rule)}
+.bbstrip img{width:240px}
+.bbstrip p{margin:0;font:600 13px/1.4 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
+.bbblock .ah.withlogo{display:flex;gap:var(--s2);align-items:center;max-width:none}
+.bbblock img.bb{width:168px;height:168px;flex:none;border:4px solid #fff;border-radius:50%}
+.bbblock h2,.bbblock p,.bbblock .kick{color:#fff}
+.bbblock .kick{color:#f1cfe0}
+.bbblock p.first::first-letter{color:#fff}
+.bbblock a{color:#fff}
+.bbblock a:hover{color:#f1cfe0}
+.bbblock .totoc a{color:#f1cfe0}
+.endlogo{margin:var(--s2) 0 0}
+.endlogo img{width:150px;background:#fff;padding:8px}
+/* Serrated tussock, the Working Party's colours */
+.sec.vs{padding:0 0 var(--s4);background:#fff}
+.vband{background:var(--vs);padding:var(--s4) 0 var(--s3)}
+.vband .kick{color:#a9cf9f}
+.vband h2{color:#fff}
+.vlead{max-width:1280px;margin:0 auto}
+.vlead img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.vlead figcaption{max-width:var(--max);margin:10px auto 0;padding:0 var(--gut)}
+.vs dl.vstats{grid-template-columns:repeat(2,minmax(0,1fr));max-width:var(--measure);margin-top:var(--s3);border-color:#c9d9c4}
+.vs dl.vstats .n,.vs dl.vstats .u{color:var(--vs)}
+.vs .vlogo{width:150px;margin:0 0 var(--s1);border-top:4px solid var(--vsa);padding-top:20px;box-sizing:content-box}
+.vs p.first::first-letter{color:var(--vsa)}
+.vs a{color:var(--vs)}
+.vs blockquote.pq{border-left-color:var(--vsa)}
+.vs blockquote.pq p{color:var(--vs)}
+.vs .vend{max-width:300px;margin:var(--s2) 0 0}
+.vbody{max-width:var(--measure)}
+/* Forum, the cream panel */
+.sec.panel{border-top:6px solid var(--g)}
+/* Deer, the dark green panel */
+.sec.deer{padding-top:0;background:#fff}
+.deer-panel{background:var(--gdd);color:#fff;padding:var(--s5) 0 var(--s4);margin-bottom:var(--s4)}
+.deer-panel .kick{color:#cfe3ae}
+.deer-panel h2{color:#fff;max-width:20ch}
+.deer-panel blockquote.pq{border-left-color:var(--g);margin:var(--s3) 0 0;max-width:48rem}
+.deer-panel blockquote.pq p{color:var(--cream);font-size:clamp(28px,3.6vw,42px);line-height:1.22}
+/* Neighbours: bold leads */
+/* wawa biik: wide and column photographs, the Biolinks aside, the funding line */
+figure.wide{margin:var(--s3) 0}
+figure.wide img{width:100%;aspect-ratio:3/2;object-fit:cover}
+figure.col{margin:var(--s3) 0;max-width:var(--measure)}
+figure.col img{width:100%}
+.wb-aside{background:var(--cream);border-top:3px solid var(--g);padding:var(--s1) var(--s2) var(--s2);margin:var(--s3) 0;max-width:52rem}
+.wb-aside-in{display:grid;grid-template-columns:200px minmax(0,1fr);gap:var(--s2);align-items:start}
+.wb-logo{display:block}
+.wb-logo img{width:200px}
+.wb-aside p{margin:0 0 12px;font-size:16.5px}
+.wb-url{font:600 15px/1.3 var(--ui)}
+.wb-fund{font:400 14px/1.5 var(--ui);color:var(--mut);border-top:1px solid var(--rule);padding-top:14px;margin-top:var(--s2)!important}
+@media (max-width:640px){.wb-aside{padding:20px 16px}.wb-aside-in{grid-template-columns:minmax(0,1fr);gap:16px}.wb-logo img{width:180px}}
+.nb strong{font:700 15px/1 var(--ui);font-variant:all-small-caps;letter-spacing:.08em;font-size:18px;color:var(--gd)}
+
+/* 10 groups spread -------------------------------------------------------- */
+.spread{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s3) var(--s2)}
+.grp{min-width:0;border-top:3px solid var(--gd);padding-top:var(--s1);display:flex;flex-direction:column}
+.grp.wide{grid-column:span 6}
+.grp.mid{grid-column:span 4}
+.grp.narrow{grid-column:span 4}
+.grp:nth-child(3){grid-column:span 5}
+.grp:nth-child(4){grid-column:span 4}
+.grp:nth-child(5){grid-column:span 3;border-top-width:1px}
+.grp h3{font:700 clamp(22px,2.2vw,28px)/1.15 var(--disp);color:var(--ink);margin:0}
+.grp.mid h3,.grp.narrow h3{font-size:21px}
+.g-logo{margin:0 0 14px}
+.g-logo img{height:64px;width:auto;max-width:100%}
+.grp.mid .g-logo img{height:72px}
+.g-where{font:600 14px/1.4 var(--ui);color:var(--gd);margin:6px 0 14px!important;font-variant:all-small-caps;letter-spacing:.08em;font-size:16px}
+.g-photo{margin:0 0 16px}
+.g-photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.g-text{font-size:16px;line-height:1.6;margin:0 0 16px!important}
+.grp.mid .g-text,.grp.narrow .g-text{font-size:15.5px}
+dl.officers{margin:0 0 18px;padding:12px 0 0;border-top:1px solid var(--rule);font:400 14px/1.45 var(--ui)}
+dl.officers div{display:flex;gap:10px;padding:3px 0}
+dl.officers dt{color:var(--mut);min-width:9.5em}
+dl.officers dd{margin:0;color:var(--ink);font-weight:600}
+.g-act{margin:auto 0 0!important}
+.g-act .btn{font-size:14.5px;padding:11px 16px}
+.gfoot{margin:var(--s3) 0 0;padding-top:var(--s1);border-top:1px solid var(--rule);font:400 16px/1.6 var(--ui);color:var(--body)}
+
+/* 11 what's on ------------------------------------------------------------ */
+.cal-top{display:flex;flex-wrap:wrap;gap:var(--s1);align-items:center;justify-content:space-between;
+ padding:var(--s1) 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:var(--s3)}
+.cal-top p{margin:0;max-width:52ch;font:400 16px/1.5 var(--ui)}
+.cal-m{margin:0 0 var(--s3)}
+.cal-mh{font:700 30px/1 var(--disp);color:var(--ink);margin:0 0 6px;padding-bottom:12px;border-bottom:3px solid var(--gd)}
+.cal-mh span{font:600 16px/1 var(--ui);color:var(--mut);letter-spacing:.06em}
+ol.cal{list-style:none;margin:0;padding:0}
+.ev{display:grid;grid-template-columns:76px minmax(0,1.15fr) minmax(0,1fr);gap:var(--s1);align-items:start;
+ padding:18px 0;border-bottom:1px solid var(--rule)}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--cream);
+ border-top:3px solid var(--g);padding:8px 4px 10px;text-align:center;color:var(--ink)}
+.tile .wd,.tile .mo{font:600 12px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--gd)}
+.tile .d{font:700 34px/1.05 var(--disp);margin:3px 0 2px}
+.ev-t{font:600 18px/1.3 var(--ui);margin:2px 0 6px;color:var(--ink)}
+.ev-t a{color:var(--ink);text-decoration-color:var(--g);text-decoration-thickness:2px}
+.ev-t a:hover{color:var(--gd)}
+.ev-when{font:500 15px/1.4 var(--ui);color:var(--gd);margin:0!important}
+.ev-where p{margin:2px 0 0!important;font:400 15px/1.45 var(--ui)}
+.ev-v{color:var(--ink)}
+.ev-n{color:var(--mut)}
+a.fnref{font:600 11px/1 var(--ui);vertical-align:super;color:var(--mut);text-decoration:none;padding:0 2px}
+a.fnref:hover{color:var(--gd)}
+.fns{margin-top:var(--s3)}
+.fn-h{font:600 15px/1 var(--ui);font-variant:all-small-caps;letter-spacing:.14em;font-size:17px;color:var(--gd);margin:0 0 12px}
+ol.fnlist{margin:0;padding-left:26px;font:400 14.5px/1.55 var(--ui);color:var(--mut);columns:2;column-gap:var(--s2)}
+ol.fnlist li{break-inside:avoid;margin-bottom:6px}
+
+/* 12 ads ------------------------------------------------------------------ */
+.ad{background:var(--gdd);padding:var(--s4) 0}
+.ad-in{max-width:760px;margin:0 auto;padding:0 var(--gut);text-align:center}
+.ad .kick{color:#cfe3ae}
+.ad-acts{margin:0 0 var(--s2)}
+.ad-sheet{display:block;background:#fff;box-shadow:0 22px 50px rgba(0,0,0,.4);transition:transform var(--t)}
+.ad-sheet:hover{transform:translateY(-4px)}
+.ad-sheet img{width:100%}
+
+/* 13 footer --------------------------------------------------------------- */
+.foot{background:var(--ink);color:#cdd4c2;padding:var(--s4) 0 var(--s3);font:400 16px/1.6 var(--ui)}
+.foot a{color:#b6d98a}
+.foot a:hover{color:#fff}
+.foot .btn.light{color:var(--gdd)}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s2)}
+.fgrid p{margin:0 0 12px}
+.fh{font:600 15px/1 var(--ui);font-variant:all-small-caps;letter-spacing:.16em;font-size:17px;color:#9aa58e;margin:0 0 14px}
+.flogos{display:flex;flex-wrap:wrap;gap:var(--s1);align-items:center;margin:var(--s3) 0 0;padding:var(--s1);background:#fff}
+.flogos img{height:72px;width:auto}
+.disc{font-size:13.5px;color:#8c9680;border-top:1px solid #313827;margin:var(--s2) 0 0;padding-top:20px}
+
+/* 14 responsive ----------------------------------------------------------- */
+/* Wide: the sticky contents rail */
+@media (min-width:1100px){
+ .layout{display:grid;grid-template-columns:var(--toc) minmax(0,1fr);border-top:1px solid var(--rule)}
+ .toc-m,.totoc{display:none}
+ .toc-side{display:block;background:var(--cream);border-right:1px solid var(--rule)}
+ .toc-side nav{position:sticky;top:0;max-height:100vh;overflow-y:auto;padding:var(--s2) 22px var(--s2) var(--gut)}
+ .toc-h{font:600 17px/1 var(--ui);font-variant:all-small-caps;letter-spacing:.16em;color:var(--gd);margin:0 0 14px}
+ .toc-side ol{list-style:none;margin:0;padding:0}
+ .toc-side li a{display:block;padding:8px 0 8px 12px;border-left:2px solid transparent;font:500 14px/1.32 var(--ui);color:var(--ink);text-decoration:none}
+ .toc-side li a:hover{color:var(--gd);border-left-color:var(--rule)}
+ .toc-side li a[aria-current]{border-left-color:var(--g);color:var(--gd);font-weight:600}
+ .toc-sub{margin:18px 0 0 12px;font:600 14px/1 var(--ui)}
+ figure.lead figcaption,.vlead figcaption{padding-left:var(--gut)}
+}
+@media (max-width:900px){
+ .two,.fly-top,.lib{grid-template-columns:minmax(0,1fr)}
+ .two .col-text,.two .col-fig,.fly-top .pf.big,.fly-top .fly-text,.lib-num,.lib-text{grid-column:1 / -1}
+ .spread{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .two .col-fig{max-width:460px}
+ .lib-num{position:static}
+ .fly-top .pf.big{max-width:520px}
+ dl.stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .grp.wide,.grp:nth-child(3),.grp:nth-child(4),.grp:nth-child(5){grid-column:span 1}
+ .ev{grid-template-columns:72px minmax(0,1fr);grid-template-rows:auto 1fr;row-gap:6px}
+ .tile{grid-row:1 / span 2}
+ .ev-where{grid-column:2}
+ .fly-top .fly-text{order:-1}
+ ol.fnlist{columns:1}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+ :root{--gut:16px;--s3:36px;--s4:48px;--s5:64px}
+ body{font-size:17px}
+ .mast-bar{padding-top:16px;padding-bottom:14px}
+ .banner{max-width:300px}
+ .mast-photo img{aspect-ratio:4/3}
+ .mast-photo figcaption{text-align:left}
+ .mast-title{padding:var(--s1) var(--gut) 28px}
+ .subblock{grid-template-columns:96px minmax(0,1fr);gap:16px}
+ .subblock img{width:96px}
+ .subblock p{font-size:16.5px}
+ .subblock p.first::first-letter{font-size:50px}
+ .subblock .acts{grid-column:1 / -1}
+ figure.lead img,.vlead img{aspect-ratio:4/3}
+ p.first::first-letter{font-size:54px}
+ blockquote.pq{padding-left:16px}
+ dl.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}
+ dl.stats div:last-child:nth-child(odd){grid-column:1 / -1}
+ .vs dl.vstats div:last-child:nth-child(odd){grid-column:auto}
+ .fly-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+ .fly-row .pf-name{font-size:15px}
+ .fly-row .pf-link{font-size:12.5px}
+ .spread{grid-template-columns:minmax(0,1fr);gap:var(--s3)}
+ dl.officers dt{min-width:8em}
+ .bbblock .ah.withlogo{flex-direction:column;align-items:flex-start;gap:16px}
+ .bbblock img.bb{width:120px;height:120px}
+ .ev{gap:14px;padding:16px 0}
+ .ev{grid-template-columns:62px minmax(0,1fr)}
+ .tile .d{font-size:28px}
+ .vs dl.vstats .n{font-size:34px}
+ .cal-top .btn{width:100%;text-align:center}
+ .acts .btn{flex:1 1 100%;text-align:center}
+ .fgrid{grid-template-columns:1fr}
+ .flogos{justify-content:center}
+ .flogos img{height:56px}
+}
+
+/* 15 motion --------------------------------------------------------------- */
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+ .pf-img:hover,.ad-sheet:hover{transform:none}
+}
+figure.wb-lead img{object-position:center 72%}
+
+/* High Camp, added 22 October 2026. Station nameboard and goods shed signs, after the 1961 photograph. */
+.sec.hc{padding-top:0;background:var(--pap)}
+.hc-band{background:#2a2119;padding:var(--s4) 0 var(--s3)}
+.hc-band .kick{color:#e8c46a}
+.hc-band h2{color:#fff;max-width:18ch}
+.hc-board{display:inline-block;margin:0 0 var(--s2)!important;padding:0 14px;position:relative}
+.hc-board::before,.hc-board::after{content:'';position:absolute;bottom:-26px;width:8px;height:26px;background:#5b4a39}
+.hc-board::before{left:34px}.hc-board::after{right:34px}
+.hc-board span{display:block;background:#f4ecd6;color:#1b1712;border:6px solid #6b2a1e;padding:10px 30px 9px;
+ font:800 clamp(26px,4.4vw,44px)/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.hc-from{display:flex;align-items:center;gap:14px;margin:var(--s1) 0 0!important;font:500 15px/1.4 var(--ui);color:#d9cfbd;max-width:none!important}
+.hc-from img{width:64px;height:auto;background:#fff;border-radius:3px;padding:4px}
+figure.hc-lead{margin:0 0 var(--s3)}
+figure.hc-lead img{width:100%;aspect-ratio:2/1;object-fit:cover}
+figure.hc-lead figcaption{max-width:var(--max);margin:10px auto 0;padding:0 var(--gut)}
+dl.stats.hc-stats .n{color:#6b2a1e;font-size:clamp(28px,3.1vw,40px)}
+.hc-freight{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s1);margin:var(--s2) 0 var(--s3);max-width:44rem}
+.hc-sign{background:#e9b73c;color:#16130e;border:4px solid #16130e;padding:16px 20px 14px;box-shadow:inset 0 0 0 3px #e9b73c,inset 0 0 0 5px #16130e}
+.hc-dir{font:700 14px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px!important}
+.hc-sign ul{list-style:none;margin:0;padding:0}
+.hc-sign li{font:800 clamp(17px,1.9vw,21px)/1.25 var(--ui);text-transform:uppercase;letter-spacing:.02em}
+.hc-more{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s2);align-items:start;margin:var(--s3) 0 0}
+.hc-map img{width:100%;border:1px solid var(--rule)}
+.hc-aside{background:var(--cream);border-top:3px solid #6b2a1e;padding:var(--s1) var(--s2) var(--s2)}
+.hc-logo{display:block;margin:0 0 16px}
+.hc-logo img{width:260px}
+.hc-aside p{margin:0 0 12px;font-size:16.5px}
+@media (max-width:640px){
+ .hc-board span{padding:8px 18px 7px;border-width:5px}
+ .hc-freight{grid-template-columns:minmax(0,1fr)}
+ .hc-more{grid-template-columns:minmax(0,1fr)}
+ .hc-aside{padding:20px 16px}
+ figure.hc-lead img{aspect-ratio:3/2}
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the articles</a>
+<div id="bar" aria-hidden="true"></div>
+
+<header class="mast" id="top">
+<div class="mast-bar"><img class="banner" src="assets/img/logo-banner.jpg" alt="South West Goulburn Landcare Network" width="1400" height="594" fetchpriority="high"></div>
+<div class="mast-hero">
+<figure class="mast-photo"><img class="eager" src="assets/img/photo-2007-08-glenaroua-hillside-rows-1600.webp" alt="Volunteers spread across rows of new tree guards on a cleared hillside at a Glenaroua planting day, bush on the ridge above." width="1600" height="700" fetchpriority="high" decoding="async"><figcaption><span class="cap">August 2007. Glenaroua planting day, hillside rows.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<div class="mast-title"><p class="kick">October 2026</p><h1>South West Goulburn Landcare Newsletter</h1></div>
+</div>
+</header>
+
+<section class="intro" aria-label="Subscribe"><div class="in">
+<div class="subblock">
+<img src="assets/img/subscribe-qr-600.png" alt="QR code. Scan it with your phone to subscribe to the newsletter, or go to https://eepurl.com/i824Ok" width="600" height="600" loading="lazy" decoding="async">
+<div>
+<p class="first">Scan the QR code or visit <a href="https://eepurl.com/i824Ok" target="_blank" rel="noopener">https://eepurl.com/i824Ok</a> to receive every issue of the newsletter. It's free, and it's the one place where every event, grant deadline and project across the district is listed on a single page. If you're reading a forwarded copy, this is how to get your own.</p>
+<p class="acts"><a class="btn" href="https://eepurl.com/i824Ok" target="_blank" rel="noopener">Subscribe to the newsletter</a></p>
+</div>
+</div>
+</div></section>
+
+<nav class="toc-m" id="in-this-issue" aria-label="In this issue, collapsible">
+<details><summary>In this issue</summary>
+<ol>
+<li><a href="#forty-years">Forty years of Landcare: Euroa, this Friday</a></li>
+<li><a href="#fruit-fly-posters">Not this season: four posters for the fruit fly</a></li>
+<li><a href="#lyndale-park">Lyndale Park: walk the farm, record the bush</a></li>
+<li><a href="#dabyminga">Trees back on The Commons, with thanks to Bendigo Bank</a></li>
+<li><a href="#library">One hundred and twenty-six documents, one page</a></li>
+<li><a href="#groups">Landcare groups across the district</a></li>
+<li><a href="#wawa-biik">On Taungurung Country: a day at Reedy Lake</a></li>
+<li><a href="#high-camp">High Camp station gets its sign back</a></li>
+<li><a href="#timber-after-fire">After the next disaster: what should happen to the debris?</a></li>
+<li><a href="#serrated-tussock">Cut the heads before they turn gold</a></li>
+<li><a href="#forum">Two days at Pakenham</a></li>
+<li><a href="#deer">Deer: yours to shoot, no one's to manage</a></li>
+<li><a href="#network-news">What the network has been up to</a></li>
+<li><a href="#whats-on">What's on: late October to December</a></li>
+<li><a href="#neighbours">From our neighbours</a></li>
+</ol></details>
+</nav>
+
+<div class="layout">
+<aside class="toc-side" aria-label="In this issue">
+<nav><p class="toc-h">In this issue</p>
+<ol>
+<li><a href="#forty-years">Forty years of Landcare: Euroa, this Friday</a></li>
+<li><a href="#fruit-fly-posters">Not this season: four posters for the fruit fly</a></li>
+<li><a href="#lyndale-park">Lyndale Park: walk the farm, record the bush</a></li>
+<li><a href="#dabyminga">Trees back on The Commons, with thanks to Bendigo Bank</a></li>
+<li><a href="#library">One hundred and twenty-six documents, one page</a></li>
+<li><a href="#groups">Landcare groups across the district</a></li>
+<li><a href="#wawa-biik">On Taungurung Country: a day at Reedy Lake</a></li>
+<li><a href="#high-camp">High Camp station gets its sign back</a></li>
+<li><a href="#timber-after-fire">After the next disaster: what should happen to the debris?</a></li>
+<li><a href="#serrated-tussock">Cut the heads before they turn gold</a></li>
+<li><a href="#forum">Two days at Pakenham</a></li>
+<li><a href="#deer">Deer: yours to shoot, no one's to manage</a></li>
+<li><a href="#network-news">What the network has been up to</a></li>
+<li><a href="#whats-on">What's on: late October to December</a></li>
+<li><a href="#neighbours">From our neighbours</a></li>
+</ol>
+<p class="toc-sub"><a href="https://eepurl.com/i824Ok" target="_blank" rel="noopener">Subscribe</a></p></nav>
+</aside>
+<main id="main">
+<section class="sec pap" id="forty-years" aria-labelledby="forty-years-h">
+<div class="in two">
+<div class="col-text"><header class="ah"><p class="kick">Euroa, Friday 23 October</p><h2 id="forty-years-h">Forty years of Landcare: Euroa, this Friday</h2></header>
+<p class="first">Landcare turns forty this year, and the Goulburn Broken is celebrating with an evening for the whole catchment: this Friday, 23 October, 5 pm to 7 pm, in the Tuscan Garden and Temple at the Seven Creeks Hotel, 2 Tarcombe Street, Euroa. Finger food and drinks are provided at no cost. The Goulburn Broken Catchment Management Authority is hosting. The people who started groups in the 1980s and 1990s have been invited back.</p>
+<p>Eight networks have each summarised their forty years on an A1 sheet for display. Ours highlights the groups, the plantings, the fencing, and the people, from the 2003 steering committee to today. Forty photographs from the network's archive, spanning 2007 to 2023, will run on the screen throughout the evening. See if you can spot yourself.</p>
+<p>A late RSVP is still welcome <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeqdMboOZ9k3erumsKJpOqSr_TDNOOjtURUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u" target="_blank" rel="noopener">via the Catchment Management Authority's form</a>.</p>
+<p class="acts"><a class="btn" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeqdMboOZ9k3erumsKJpOqSr_TDNOOjtURUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u" target="_blank" rel="noopener">RSVP on the form</a></p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+<figure class="col-fig poster"><a href="assets/img/forty-years-invitation-1242.png"><img src="assets/img/forty-years-invitation-1242.png" alt="Invitation: Forty years of Landcare, Goulburn Broken, 1986 to 2026. Friday 23 October 2026, 5pm to 7pm, Seven Creeks Hotel, Tuscan Garden and Temple, 2 Tarcombe Street, Euroa. Free; finger food and drinks. RSVP through the Catchment Management Authority form. Hosted by the Goulburn Broken Catchment Management Authority." width="1242" height="1754" loading="lazy" decoding="async"></a><figcaption>The invitation from the Goulburn Broken Catchment Management Authority.</figcaption></figure>
+</div>
+</section>
+<section class="sec cream" id="fruit-fly-posters" aria-labelledby="fruit-fly-posters-h">
+<div class="in">
+<div class="fly-top"><figure class="pf big"><a class="pf-img" href="assets/pdf/poster-3-front-line-print-A3.pdf"><img src="assets/img/poster-3-front-line-1200.webp" alt="Poster, Your Backyard Is the Front Line: Trap. Net. Destroy. Fruit fly does not stop at the fence; one neglected tree feeds a whole street. Talk to your neighbours, cover your crop, report neglected fruit trees on public land to the Shire. Enlist at the Seymour Show, Kings Park, 2 and 3 October. Not this season. Contact 0409 515 630, swglandcare@gmail.com." width="1200" height="1698" loading="lazy" decoding="async"></a><figcaption><span class="pf-name">The Front Line</span><a class="pf-link" href="assets/pdf/poster-3-front-line-print-A3.pdf">Print file, A3 PDF</a></figcaption></figure><div class="fly-text"><header class="ah"><p class="kick">Fruit fly</p><h2 id="fruit-fly-posters-h">Not this season: four posters for the fruit fly</h2></header>
+<p class="first">Queensland fruit fly is now established in the Seymour district, spreading from backyards rather than orchards. Adults overwinter in sheltered trees; maggots develop in fruit left on the ground. A single unpicked tree in October can seed an entire street by January. Pick all your fruit, bag or boil what you won't eat, net what you want to keep, and set a bottle trap in August so you see them before they reach your apricots.</p>
+<p>These four posters deliver the same message in four different ways. They are the network's own, free to print, ideal for shop windows, hall noticeboards, school fences, produce stalls and roadside stands. Each is A3, high-quality for printing. Download your favourite below, or <a href="mailto:swglandcare@gmail.com?subject=Fruit%20fly%20posters%2C%20print%20files&amp;body=Hi%20Luca%2C%0A%0APlease%20send%20me%20the%20print%20files%20for%20the%20fruit%20fly%20posters.%0A%0AI%20would%20like%20to%20put%20them%20up%20at%3A%0A">ask for the full set with editable files</a>. Let us know where you display them.</p></div></div>
+<div class="fly-row"><figure class="pf"><a class="pf-img" href="assets/pdf/poster-1-uninvited-guest-print-A3.pdf"><img src="assets/img/poster-1-uninvited-guest-800.webp" alt="Poster, The Uninvited Guest, from the South West Goulburn Landcare Network: a villain in reddish brown, seven millimetres tall, with a hundred eggs a day to lay. Close the show early: net after fruit set, hang traps at head height in the shade, pick up every fallen fruit. Final notices at the Seymour Show, Kings Park, 2 and 3 October. Not this season. Contact 0409 515 630, swglandcare@gmail.com." width="800" height="1132" loading="lazy" decoding="async"></a><figcaption><span class="pf-name">The Uninvited Guest</span><a class="pf-link" href="assets/pdf/poster-1-uninvited-guest-print-A3.pdf">Print file, A3 PDF</a></figcaption></figure><figure class="pf"><a class="pf-img" href="assets/pdf/poster-2-fly-works-weekends-print-A3.pdf"><img src="assets/img/poster-2-fly-works-weekends-800.webp" alt="Poster, The Fly Works Weekends. So does a good trap. The bottle trap: one soft drink bottle, three holes the size of a ten cent piece, ten centimetres from the top, a cup of fruit juice with the pulp and a tablespoon of cloudy ammonia, hung a metre and a half up in shaded foliage, mix changed weekly. Net, trap, bin. See it done at the Seymour Show, Kings Park, 2 and 3 October. Not this season. Contact 0409 515 630, swglandcare@gmail.com." width="800" height="1132" loading="lazy" decoding="async"></a><figcaption><span class="pf-name">The Fly Works Weekends</span><a class="pf-link" href="assets/pdf/poster-2-fly-works-weekends-print-A3.pdf">Print file, A3 PDF</a></figcaption></figure><figure class="pf"><a class="pf-img" href="assets/pdf/poster-4-goulburn-gold-print-A3.pdf"><img src="assets/img/poster-4-goulburn-gold-800.webp" alt="Poster, Goulburn Gold: fancy grade, grown in the south west Goulburn. Perfect on the outside is not proof; cut fruit open before you share it. Packed by careful growers: netted early, trapped weekly, fallen fruit destroyed. Seymour Show, Kings Park, 2 and 3 October. Not this season. Contact 0409 515 630, swglandcare@gmail.com." width="800" height="1132" loading="lazy" decoding="async"></a><figcaption><span class="pf-name">Goulburn Gold</span><a class="pf-link" href="assets/pdf/poster-4-goulburn-gold-print-A3.pdf">Print file, A3 PDF</a></figcaption></figure></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec pap" id="lyndale-park" aria-labelledby="lyndale-park-h">
+<figure class="lead"><img src="assets/img/photo-2025-lyndale-dam-field-day-1100.webp" alt="A group of landholders, one in a wheelchair, standing on the bank of the Lyndale Park dam while a man in a hat talks and points across the water." width="1100" height="826" loading="lazy" decoding="async"><figcaption><span class="cap">2025. Field day at the Lyndale Park dam.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<div class="in"><header class="ah"><p class="kick">Field day, Saturday 14 November</p><h2 id="lyndale-park-h">Lyndale Park: walk the farm, record the bush</h2></header>
+<dl class="stats"><div><dt><span class="n">214</span><span class="u">hectares</span></dt><dd>on Tallarook-Pyalong Road</dd></div><div><dt><span class="n">2.6</span><span class="u">km</span></dt><dd>of Sunday Creek frontage</dd></div><div><dt><span class="n">19</span><span class="u">ha</span></dt><dd>fenced out of grazing</dd></div><div><dt><span class="n">11</span><span class="u">ha</span></dt><dd>limed</dd></div><div><dt><span class="n">30</span></dt><dd>households, run as one farm</dd></div></dl>
+<div class="txt"><p class="first">Do you know Lyndale Park? Located on Tallarook-Pyalong Road, it spans 214 hectares with 2.6 kilometres of Sunday Creek frontage. Thirty households own and run it as a single farm. Since 2024, it has served as the network's demonstration site for the Climate Smart Agriculture Program, funded by the Goulburn Broken Catchment Management Authority through the Natural Heritage Trust. The program continues until 2028. In two years, the owners have fenced 19 hectares to exclude grazing, fenced stock off the creek, limed 11 hectares, sown multispecies fodder, and supplied water to troughs so dams can rest. They have begun turning a degraded dam into a wetland.</p>
+<p>On Saturday 14 November, the property opens for the network's field day. Ecologist Peter Mitchell will lead a walk from one end of the farm through grey box and white box country, past the retired paddocks, new fencing and wetland. Along the way, the group will establish the farm's permanent photo points and enter the first vegetation condition records in Covram. Anyone with a phone can participate, and the method goes home with you. Start time and meeting point come with your booking; lunch is provided. Bring boots, a hat, water and a charged phone. All are welcome. <a href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">Book with me</a> on 0409 515 630 or <a href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">swglandcare@gmail.com</a> so we can cater for everyone.</p>
+<p>Covram is the Condition Of Vegetation Rapid Assessment Method, a free phone app built by Ian Davidson of Covram Pty Ltd in Greensborough, following twenty years running Regeneration Solutions and time at Greening Australia as a wildlife biologist. His son Michael developed the software. Beneath it sits VAST (Vegetation Assets, States and Transitions), the framework published by Thackway and Lesslie in 2006 for describing how far a patch of bush has shifted from its natural state and its direction of change.</p></div>
+<figure class="pp-fig"><svg class="pp" viewBox="0 0 640 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pp-t pp-d">
+<title id="pp-t">A photo point in a paddock</title>
+<desc id="pp-d">A star picket marks the photo point in a paddock. A phone sits on top of the picket, aimed along a dashed sightline at a patch of bush with two old trees, one with a hollow. Step one, stand here, at the picket. Step two, photograph that, the patch of bush. Step three, answer the questions on the phone. Written into the ground beneath: COVRAM, the free phone app, stands for Condition Of Vegetation Rapid Assessment Method. VAST, the framework underneath it, stands for Vegetation Assets, States and Transitions.</desc>
+<!-- sky -->
+<rect width="640" height="700" fill="#f6f3ea"/>
+<!-- far hills -->
+<path d="M0 334 C 70 300 150 296 226 318 C 300 338 360 296 446 290 C 530 285 590 312 640 304 L640 420 L0 420 Z" fill="#d3e2bd"/>
+<!-- paddock -->
+<path d="M0 380 C 110 366 230 374 340 366 C 450 358 560 360 640 370 L640 520 L0 520 Z" fill="#b3d08a"/>
+<g stroke="#7fa64e" stroke-width="2" stroke-linecap="round" fill="none">
+ <path d="M40 420 l3 -9 M46 421 l-1 -8 M210 440 l3 -9 M216 441 l-2 -8 M300 410 l2 -8 M306 411 l-2 -7 M348 456 l3 -9 M354 457 l-1 -8 M90 478 l3 -9 M96 479 l-2 -8 M560 430 l2 -8 M566 431 l-2 -7 M470 470 l3 -9 M476 471 l-2 -8 M610 488 l2 -8"/>
+</g>
+<!-- the patch of bush -->
+<g>
+ <path d="M452 366 C 454 330 449 296 444 262 C 440 240 432 226 420 212 M446 270 C 462 250 476 238 494 228 M448 300 C 436 290 424 286 410 286" stroke="#6b5a45" stroke-width="9" stroke-linecap="round" fill="none"/>
+ <path d="M452 366 C 451 340 448 316 446 292" stroke="#6b5a45" stroke-width="14" stroke-linecap="round" fill="none"/>
+ <ellipse cx="449" cy="318" rx="5" ry="8" fill="#2c2418"/>
+ <path d="M566 368 C 566 336 562 304 556 276 M560 300 C 574 286 586 278 600 272" stroke="#6b5a45" stroke-width="8" stroke-linecap="round" fill="none"/>
+ <path d="M368 214 C 372 186 404 170 428 180 C 440 160 476 156 494 176 C 518 170 540 190 532 214 C 548 230 528 256 504 248 C 494 264 462 266 450 252 C 432 266 398 262 394 244 C 368 246 354 228 368 214 Z" fill="#3f6b1f"/>
+ <path d="M396 210 C 404 194 426 190 440 200 C 452 186 478 186 488 202 C 506 200 516 214 508 228 C 494 238 470 236 460 228 C 444 238 418 236 410 226 C 396 228 388 220 396 210 Z" fill="#5f8e2e"/>
+ <path d="M516 246 C 520 226 546 214 566 222 C 584 210 612 220 612 242 C 628 252 618 276 598 274 C 588 288 560 288 552 276 C 530 282 510 266 516 246 Z" fill="#4f7d25"/>
+ <path d="M538 244 C 546 232 562 230 574 238 C 588 232 602 240 598 254 C 586 262 566 262 556 256 C 544 260 534 254 538 244 Z" fill="#75a538"/>
+ <path d="M384 368 C 380 352 394 340 408 346 C 418 336 436 342 436 356 C 444 362 438 372 428 370 Z" fill="#5f8e2e"/>
+ <path d="M488 370 C 486 356 498 346 512 352 C 522 344 538 350 536 364 C 542 370 534 376 526 374 Z" fill="#3f6b1f"/>
+ <path d="M582 372 C 580 358 594 350 606 356 C 616 350 630 358 626 370 Z" fill="#5f8e2e"/>
+</g>
+<!-- viewfinder corners round the bush -->
+<g stroke="#14180f" stroke-width="4" stroke-linecap="round" fill="none">
+ <path d="M362 176 v-28 h28 M600 148 h28 v28 M628 360 v28 h-28 M390 388 h-28 v-28"/>
+</g>
+<!-- sightline -->
+<path d="M176 196 C 250 204 310 222 362 244" stroke="#14180f" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" fill="none"/>
+<path d="M352 232 L 366 246 L 346 250" stroke="#14180f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<!-- star picket -->
+<path d="M130 452 C 130 430 128 300 129 252 L 139 252 C 140 300 141 430 141 452 Z" fill="#454a40"/>
+<path d="M131 268 h8 M131 300 h8 M131 332 h8 M131 364 h8 M131 396 h8" stroke="#2c3028" stroke-width="2"/>
+<path d="M108 456 C 120 446 150 446 162 456 Z" fill="#8a7a5c"/>
+<!-- bracket and phone -->
+<rect x="126" y="232" width="18" height="24" rx="3" fill="#2c3028"/>
+<g transform="rotate(-4 140 176)">
+ <rect x="104" y="112" width="72" height="124" rx="12" fill="#14180f"/>
+ <rect x="111" y="124" width="58" height="100" rx="4" fill="#f6f3ea"/>
+ <rect x="116" y="130" width="48" height="34" fill="#d3e2bd"/>
+ <path d="M122 160 C 122 150 132 144 138 150 C 144 142 156 146 156 156 C 160 158 158 162 154 162 L 124 162 Z" fill="#3f6b1f"/>
+ <g stroke="#3f6b1f" stroke-width="2.4" fill="none" stroke-linecap="round">
+  <rect x="117" y="172" width="8" height="8" rx="1.5"/><path d="M130 176 h28"/>
+  <rect x="117" y="188" width="8" height="8" rx="1.5"/><path d="M130 192 h24"/>
+  <rect x="117" y="204" width="8" height="8" rx="1.5"/><path d="M130 208 h30"/>
+ </g>
+ <path d="M118.5 175.5 l2 2 l4 -5 M118.5 191.5 l2 2 l4 -5" stroke="#75a538" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- the three steps -->
+<g font-family="'Public Sans', Helvetica, Arial, sans-serif" font-weight="600" font-size="27" fill="#14180f">
+ <circle cx="44" cy="72" r="19" fill="#3f6b1f"/>
+ <text x="44" y="81" text-anchor="middle" fill="#f6f3ea" font-family="'Libre Bodoni', Georgia, serif" font-weight="700" font-size="24">3</text>
+ <text x="74" y="81">Answer the questions</text>
+ <path d="M96 96 C 100 104 104 108 110 114" stroke="#14180f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+ <circle cx="384" cy="112" r="19" fill="#3f6b1f"/>
+ <text x="384" y="121" text-anchor="middle" fill="#f6f3ea" font-family="'Libre Bodoni', Georgia, serif" font-weight="700" font-size="24">2</text>
+ <text x="414" y="121">Photograph that</text>
+ <circle cx="186" cy="470" r="19" fill="#3f6b1f"/>
+ <text x="186" y="479" text-anchor="middle" fill="#f6f3ea" font-family="'Libre Bodoni', Georgia, serif" font-weight="700" font-size="24">1</text>
+ <text x="216" y="479">Stand here</text>
+ <path d="M166 466 C 158 462 152 458 146 452" stroke="#14180f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</g>
+<!-- the ground, with the two expansions written into it -->
+<path d="M0 520 C 90 510 200 522 320 514 C 440 506 560 520 640 512 L640 700 L0 700 Z" fill="#3f6b1f"/>
+<path d="M0 520 C 90 510 200 522 320 514 C 440 506 560 520 640 512" stroke="#2f5316" stroke-width="3" fill="none"/>
+<g font-family="'Public Sans', Helvetica, Arial, sans-serif" fill="#f6f3ea">
+ <text x="32" y="566" font-family="'Libre Bodoni', Georgia, serif" font-weight="700" font-size="34" letter-spacing="1">COVRAM</text>
+ <text x="210" y="565" font-size="20" fill="#cfe3ae">the free phone app</text>
+ <text x="32" y="598" font-size="22.5"><tspan font-weight="800" fill="#cfe3ae">C</tspan>ondition <tspan font-weight="800" fill="#cfe3ae">O</tspan>f <tspan font-weight="800" fill="#cfe3ae">V</tspan>egetation <tspan font-weight="800" fill="#cfe3ae">R</tspan>apid <tspan font-weight="800" fill="#cfe3ae">A</tspan>ssessment <tspan font-weight="800" fill="#cfe3ae">M</tspan>ethod</text>
+ <text x="32" y="646" font-family="'Libre Bodoni', Georgia, serif" font-weight="700" font-size="34" letter-spacing="1">VAST</text>
+ <text x="148" y="645" font-size="20" fill="#cfe3ae">the framework underneath it</text>
+ <text x="32" y="678" font-size="22.5"><tspan font-weight="800" fill="#cfe3ae">V</tspan>egetation <tspan font-weight="800" fill="#cfe3ae">A</tspan>ssets, <tspan font-weight="800" fill="#cfe3ae">S</tspan>tates and <tspan font-weight="800" fill="#cfe3ae">T</tspan>ransitions</text>
+</g>
+</svg><figcaption>A photo point, drawn. Stand at the picket, photograph the same patch of bush, answer the same questions, every year.</figcaption></figure>
+<div class="txt"><p>The process in the paddock is straightforward. Stand at the photo point, take a photograph, and answer a brief set of questions about what you see: habitat type, structural intactness, presence of large hollow-bearing trees, woody weeds, ground layer weediness, and native diversity. Covram stores the photograph, location and answers together with the date. Next year, return to the same spot, repeat the process, and compare results. The rating is made by you, using the VAST classes; the app's job is to maintain the record, enabling comparisons in five years, no matter who's taking part. It's a rapid method, not a comprehensive flora survey, and doesn't claim to be.</p>
+<blockquote class="pq"><p>Funders now expect monitoring, and this is a form of monitoring any landholder can do without a consultant.</p></blockquote>
+<p>Why does it matter? A grant application that says, "We fenced the creek in 2024 and here are the dated photographs and condition records from three points since," is received differently from one that simply says, "We have done a lot of work." Funders now expect monitoring, and this is a form of monitoring any landholder can do without a consultant. The same record stays with the property, useful for succession conversations, a sale, a covenant, or planning for the next owner. Lyndale begins its series at the field day, and any member can start on their own property the same afternoon.</p>
+<p>Before you come, install Covram and register with your name and email. For iPhone: <a href="https://apps.apple.com/au/app/covram-vegetation-monitoring/id6463190446" target="_blank" rel="noopener">apps.apple.com/au/app/covram-vegetation-monitoring/id6463190446</a>. For Android: <a href="https://play.google.com/store/apps/details?id=com.covram.covram" target="_blank" rel="noopener">play.google.com/store/apps/details?id=com.covram.covram</a>. The developer's site, with explanations and a short tutorial, is <a href="https://covram.com.au" target="_blank" rel="noopener">covram.com.au</a>. You'll be invited to join the Lyndale project before the day so your first records go straight onto your own phone.</p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/au/app/covram-vegetation-monitoring/id6463190446" target="_blank" rel="noopener">Covram on the App Store</a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.covram.covram" target="_blank" rel="noopener">Covram on Google Play</a> <a class="btn ghost" href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">Book for the field day</a></p></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<aside class="ad" id="lyndale-ad" aria-label="Field day, Saturday 14 November"><div class="ad-in">
+<p class="kick">Field day, Saturday 14 November</p>
+<p class="ad-acts"><a class="btn light" href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">Book by email</a></p>
+<a class="ad-sheet" href="assets/img/lyndale-poster-1200.webp"><img src="assets/img/lyndale-poster-1200.webp" alt="Poster: Lyndale Park field day, Tallarook. Walk the farm, measure the bush. Saturday 14 November, a morning walk then lunch, 465 Tallarook-Pyalong Road, Tallarook. Free, everyone welcome, times come with your booking. Book on 0409 515 630 or swglandcare@gmail.com." width="1200" height="1698" loading="lazy" decoding="async"></a>
+</div></aside>
+<section class="sec bbblock" id="dabyminga" aria-labelledby="dabyminga-h">
+<div class="bbstrip"><img src="assets/img/bendigobank-wordmark.png" alt="Bendigo Bank" width="566" height="88" loading="lazy" decoding="async"><p>Community Bank Wallan, Kilmore &amp; Broadford</p></div>
+<div class="in"><header class="ah withlogo"><img class="bb" src="assets/img/bendigo-circle-plum-320.png" alt="Bendigo Bank Community Bank logo" width="320" height="320" loading="lazy" decoding="async"><div><p class="kick">Community Bank grant</p><h2 id="dabyminga-h">Trees back on The Commons, with thanks to Bendigo Bank</h2></div></header>
+<div class="txt"><p class="first">Dabyminga Landcare's project, "Bringing trees back to The Commons, Tallarook," has been funded by Community Bank Wallan, Kilmore &amp; Broadford through the Bendigo Bank Community Foundation. The decision came through on 13 October. The Commons on Hedleys Lane, where the first plants went in two years ago, now moves to its next stage thanks to locals banking with their Community Bank. A Community Bank returns its profits to the district it serves, and this is one of the places it shows.</p>
+<p>Dates for the work will be confirmed with the group over summer. Both Dabyminga's newsletter and this one will carry updates, including how to get involved.</p>
+<p>A huge thank you to Community Bank Wallan, Kilmore &amp; Broadford, and the Bendigo Bank Community Foundation. More updates to come.</p></div>
+<p class="endlogo"><img src="assets/img/dabyminga-logo-700.png" alt="Dabyminga Landcare Incorporated" width="700" height="297" loading="lazy" decoding="async"></p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec pap" id="library" aria-labelledby="library-h">
+<div class="in lib">
+<div class="lib-num" aria-hidden="true"><span class="n">126</span><span class="l">documents, one page</span></div>
+<div class="lib-text"><header class="ah"><p class="kick">On the website</p><h2 id="library-h">One hundred and twenty-six documents, one page</h2></header>
+<p class="first">The Library page on the network's website now holds 126 documents: plans and reports about this district from Mitchell Shire, Strathbogie Shire, the Goulburn Broken CMA, Agriculture Victoria, various departments and researchers. These include biodiversity strategies, roadside management plans, weed guides, waterway studies, the catchment strategy, fire and flood plans, dam and pasture guides. Many were published, filed on council websites, then forgotten. Several are no longer available on the publisher's site. Now, they're all here, each with a two-sentence summary, the full abstract one click away, the PDF ready to open, and a link to the original if it still exists.</p>
+<p>Search by keyword, place or topic. Ten topic buttons sort everything (weeds, waterways, fire, biodiversity, soil, planning and more); a publisher filter narrows results to one source. Type 'Kilmore Creek,' 'serrated tussock,' or 'Tallarook' and the page shows what's been written about it. For anyone preparing a grant application, submission to council or management plan for their property, the information is now an evening's reading, not a month's hunt.</p>
+<p>The page is free, with no login required. Find it in the top bar at <a href="https://swglandcare.org.au" target="_blank" rel="noopener">swglandcare.org.au</a>, or go straight to <a href="https://swglandcare.org.au/library" target="_blank" rel="noopener">swglandcare.org.au/library</a>. More documents are added as they're found; if you have a report about this district that isn't there, <a href="mailto:swglandcare@gmail.com?subject=A%20document%20for%20the%20library&amp;body=Hi%20Luca%2C%0A%0AAttached%20is%20a%20report%20about%20this%20district%20that%20is%20not%20in%20the%20library.%0A%0ATitle%3A%0APublisher%20and%20year%3A">email it to the network address</a> and it'll join the shelf.</p>
+<p class="acts"><a class="btn" href="https://swglandcare.org.au/library" target="_blank" rel="noopener">Open the library</a></p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</div>
+</section>
+<aside class="ad" id="library-ad" aria-label="The library"><div class="ad-in">
+<p class="kick">The library</p>
+<p class="ad-acts"><a class="btn light" href="https://swglandcare.org.au/library" target="_blank" rel="noopener">Open the library</a></p>
+<a class="ad-sheet" href="https://swglandcare.org.au/library" target="_blank" rel="noopener"><img src="assets/img/library-ad-1241.png" alt="Advertisement: The Landcare library. 126 guides, reports and plans for this district, on one searchable page. Search by topic or by publisher. Free, no login. swglandcare.org.au/library" width="1241" height="1755" loading="lazy" decoding="async"></a>
+</div></aside>
+<section class="sec cream" id="groups" aria-labelledby="groups-h">
+<figure class="lead"><img src="assets/img/photo-2026-06-glenaroua-planting-1600.webp" alt="The volunteers of the June 2026 Glenaroua planting gathered for a photograph under a big old gum, a marquee and parked cars behind them." width="1600" height="862" loading="lazy" decoding="async"><figcaption><span class="cap">June 2026. Glenaroua Land Management Group planting along Kurkuruc Creek, Glenaroua Station.</span> <span class="cr">Photograph: SWGLN</span></figcaption></figure>
+<div class="in"><header class="ah"><p class="kick">Five groups</p><h2 id="groups-h">Landcare groups across the district</h2></header>
+<p class="dek">Five groups care for the creeks between Kilmore and Seymour. Here's who runs each, where they meet, what they've achieved this year and what's coming up. If you've never joined one, start here.</p>
+<div class="spread">
+<article class="grp wide" aria-labelledby="g-join-dabyminga">
+<p class="g-logo"><img src="assets/img/dabyminga-logo-700.png" alt="Dabyminga Landcare Incorporated" width="700" height="297" loading="lazy" decoding="async"></p><h3 id="g-join-dabyminga">Dabyminga Landcare</h3>
+<p class="g-where">Tallarook, Broadford, Reedy Creek and the ranges between</p>
+<figure class="g-photo"><img src="assets/img/photo-2016-dabyminga-cooperative-900.webp" alt="Seven members of the Dabyminga Catchment Co-operative standing in the bush behind a sign reading Community Project." width="900" height="672" loading="lazy" decoding="async"><figcaption><span class="cap">2016. Dabyminga Catchment Co-operative members.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<p class="g-text">Dabyminga Landcare covers the Dabyminga Creek catchment: Tallarook, Broadford, Reedy Creek and the surrounding ranges. The group evolved from the Tallarook and Reedy Creek groups, incorporating in 2025. Blackberry control, under an agreement with the Blackberry Action Group, has been a long-running focus. This year, the group planted at the Tallarook Arboretum on 8 August and secured a Community Bank grant for the next stage at The Commons on Hedleys Lane. Jenny McInnes is president, Mark South vice president, Ian Christie treasurer, and David Laurie secretary. Working bees and meetings are held every few months, usually on Sunday mornings at the Arboretum opposite the Mechanics Institute. The AGM is Sunday 15 November, 4 pm, in Tallarook; the hall is booked out, so the venue comes in Mark South's newsletter. New members are welcome to walk in. Mark South manages the group's newsletter and is the contact for joining; reach him <a href="mailto:swglandcare@gmail.com?subject=Joining%20Dabyminga%20Landcare&amp;body=Hi%20Luca%2C%0A%0AI%20am%20interested%20in%20joining%20Dabyminga%20Landcare.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">via the network address</a>.</p>
+<dl class="officers"><div><dt>President</dt><dd>Jenny McInnes</dd></div><div><dt>Vice president</dt><dd>Mark South</dd></div><div><dt>Treasurer</dt><dd>Ian Christie</dd></div><div><dt>Secretary</dt><dd>David Laurie</dd></div></dl>
+<p class="g-act"><a class="btn" href="mailto:swglandcare@gmail.com?subject=Joining%20Dabyminga%20Landcare&amp;body=Hi%20Luca%2C%0A%0AI%20am%20interested%20in%20joining%20Dabyminga%20Landcare.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">Ask about joining</a></p>
+</article>
+<article class="grp wide" aria-labelledby="g-join-glenaroua">
+<p class="g-logo"><img src="assets/img/glenaroua-logo-700.png" alt="Glenaroua Land Management Group" width="700" height="297" loading="lazy" decoding="async"></p><h3 id="g-join-glenaroua">Glenaroua Land Management Group</h3>
+<p class="g-where">The lower Sunday, Kurkuruc, Mollisons and Sugarloaf creeks</p>
+<figure class="g-photo"><img src="assets/img/photo-2022-06-glenaroua-crowd-900.webp" alt="A crowd of planters waving from a green hillside at the Glenaroua planting weekend, a trailer of supplies beside them." width="900" height="676" loading="lazy" decoding="async"><figcaption><span class="cap">June 2022. Glenaroua planting weekend, the crowd.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<p class="g-text">Glenaroua Land Management Group works along the lower Sunday, Kurkuruc, Mollisons, and Sugarloaf creeks. In June, the group planted 3,500 tubestock along Kurkuruc Creek at Glenaroua Station in the rain with about 120 volunteers. The 2027 planting (4,000 seedlings from TreeProject for a Glenaroua property) is scheduled for the weekend of 19 to 20 June. After the January fires, the group made significant donations to the Highlands and Ruffy recovery efforts, continuing a tradition of quiet support over thirty years. At the August AGM, Paul Fleming stepped down after 27 years, most as chair. David Dixon is now chair, Byron Jones vice chair, Sue Preston minute secretary, and Steve Koch treasurer and group representative on the network. Meetings are quarterly on Thursdays at the Glenaroua fire shed; the next is 19 November, with a BBQ from 6.30 pm and the meeting at 7.30 pm, featuring Kerri Robson of Gecko CLaN on weather stations and soil moisture probes. Fifty-six families are members. The voluntary contribution is $40.</p>
+<dl class="officers"><div><dt>Chair</dt><dd>David Dixon</dd></div><div><dt>Vice chair</dt><dd>Byron Jones</dd></div><div><dt>Minute secretary</dt><dd>Sue Preston</dd></div><div><dt>Treasurer</dt><dd>Steve Koch</dd></div></dl>
+<p class="g-act"><a class="btn" href="mailto:swglandcare@gmail.com?subject=Joining%20Glenaroua%20Land%20Management%20Group&amp;body=Hi%20Luca%2C%0A%0AI%20am%20interested%20in%20joining%20Glenaroua%20Land%20Management%20Group.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">Ask about joining</a></p>
+</article>
+<article class="grp mid" aria-labelledby="g-join-willowmavin">
+<h3 id="g-join-willowmavin">Willowmavin Landcare</h3>
+<p class="g-where">Kilmore and the Willowmavin valley</p>
+
+<p class="g-text">Willowmavin Landcare covers Kilmore and the Willowmavin valley. Members have planted an estimated 6,000 trees over the years. This spring, the group shifted focus to counting the creatures living in those plantings: they are running fortnightly bioblitzes along the Willowmavin Biolink, recorded on iNaturalist, with the fourth on Sunday 25 October and the series running until Christmas. Frank Hajdu is president, Hamish Hunt vice president, and Robert Sloan secretary and treasurer. Meetings take place Monday evenings at the Royal Oak in Kilmore, 7.30 pm, with meals from 6 pm. Membership is $25 per household. Contact <a href="mailto:secretary@willowmavinlc.org.au?subject=Joining%20Willowmavin%20Landcare&amp;body=Hi%2C%0A%0AI%20am%20interested%20in%20joining%20Willowmavin%20Landcare.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">secretary@willowmavinlc.org.au</a>; bioblitz registration is <a href="https://events.humanitix.com/willowmavin-4th-biolink-blitz" target="_blank" rel="noopener">via Humanitix</a>.</p>
+<dl class="officers"><div><dt>President</dt><dd>Frank Hajdu</dd></div><div><dt>Vice president</dt><dd>Hamish Hunt</dd></div><div><dt>Secretary and treasurer</dt><dd>Robert Sloan</dd></div></dl>
+<p class="g-act"><a class="btn" href="mailto:secretary@willowmavinlc.org.au?subject=Joining%20Willowmavin%20Landcare&amp;body=Hi%2C%0A%0AI%20am%20interested%20in%20joining%20Willowmavin%20Landcare.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">Ask about joining</a></p>
+</article>
+<article class="grp mid" aria-labelledby="g-join-scdc">
+<p class="g-logo"><img src="assets/img/scdc-logo-colour.png" alt="Sunday Creek Dry Creek Landcare Group" width="351" height="558" loading="lazy" decoding="async"></p><h3 id="g-join-scdc">Sunday Creek Dry Creek Landcare Group</h3>
+<p class="g-where">Broadford and the Colin Officer Flora Reserve</p>
+<figure class="g-photo"><img src="assets/img/photo-2018-07-glenaroua-scdc-planting-700.webp" alt="Ripped planting lines across a paddock, with planters spread out along them and hills behind." width="700" height="526" loading="lazy" decoding="async"><figcaption><span class="cap">July 2018. Glenaroua and Sunday Creek Dry Creek planting.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<p class="g-text">Sunday Creek Dry Creek Landcare Group covers Broadford and the two creeks in its name, with the Colin Officer Flora Reserve at its heart, the richest orchid and lily site in the shire. The group marked its renewal with a wildflower walk through the reserve on 4 October. Its Streamside Conservation sub-group is hosting a children's talk on 'what happens if the insects go', at the Broadford Living and Learning Centre on Sunday 8 November. Jacqui Fulton is president. Contact: <a href="mailto:scdclandcaregroup@gmail.com?subject=Joining%20Sunday%20Creek%20Dry%20Creek%20Landcare&amp;body=Hi%2C%0A%0AI%20am%20interested%20in%20joining%20Sunday%20Creek%20Dry%20Creek%20Landcare%20Group.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">scdclandcaregroup@gmail.com</a>.</p>
+<dl class="officers"><div><dt>President</dt><dd>Jacqui Fulton</dd></div></dl>
+<p class="g-act"><a class="btn" href="mailto:scdclandcaregroup@gmail.com?subject=Joining%20Sunday%20Creek%20Dry%20Creek%20Landcare&amp;body=Hi%2C%0A%0AI%20am%20interested%20in%20joining%20Sunday%20Creek%20Dry%20Creek%20Landcare%20Group.%20What%20do%20I%20need%20to%20do%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">Ask about joining</a></p>
+</article>
+<article class="grp narrow" aria-labelledby="g-join-nvpw">
+<h3 id="g-join-nvpw">Nulla Vale Pyalong West Landcare Group</h3>
+<p class="g-where">South-west of Seymour toward Lancefield</p>
+
+<p class="g-text">Nulla Vale Pyalong West Landcare Group serves the high country south-west of Seymour towards Lancefield. Michael Wright is president. This year, the group purchased a rabbit warren implosion device, with members trained in its use in October. If your warrens are beyond ripping, this is the group to contact. Reach out <a href="mailto:swglandcare@gmail.com?subject=Joining%20Nulla%20Vale%20Pyalong%20West%20Landcare&amp;body=Hi%20Luca%2C%0A%0AI%20am%20interested%20in%20Nulla%20Vale%20Pyalong%20West%20Landcare.%20Can%20you%20pass%20me%20on%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">via the network address</a> and you'll be connected.</p>
+<dl class="officers"><div><dt>President</dt><dd>Michael Wright</dd></div></dl>
+<p class="g-act"><a class="btn" href="mailto:swglandcare@gmail.com?subject=Joining%20Nulla%20Vale%20Pyalong%20West%20Landcare&amp;body=Hi%20Luca%2C%0A%0AI%20am%20interested%20in%20Nulla%20Vale%20Pyalong%20West%20Landcare.%20Can%20you%20pass%20me%20on%3F%0A%0AName%3A%0AWhere%20I%20am%3A%0APhone%3A">Ask about joining</a></p>
+</article>
+</div>
+<p class="gfoot">South West Goulburn Landcare Network: Jenny McInnes president, Ian Christie vice president, Nicole Maxwell treasurer, Narelle Ayson minute secretary. Phone 0409 515 630, email <a href="mailto:swglandcare@gmail.com?subject=A%20question%20for%20the%20network&amp;body=Hi%20Luca%2C%0A%0A">swglandcare@gmail.com</a>, or visit <a href="https://swglandcare.org.au" target="_blank" rel="noopener">swglandcare.org.au</a>.</p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<aside class="ad" id="christmas-party-ad" aria-label="Sunday 29 November, Broadford"><div class="ad-in">
+<p class="kick">Sunday 29 November, Broadford</p>
+<p class="ad-acts"><a class="btn light" href="mailto:secretary@willowmavinlc.org.au?subject=Christmas%20party%2C%2029%20November&amp;body=Hi%20Leanne%2C%0A%0APlease%20count%20us%20in%20for%20the%20joint%20Landcare%20Christmas%20party%20on%20Sunday%2029%20November.%0A%0AName%3A%0ANumber%20coming%3A%0AWhat%20we%20will%20bring%3A">RSVP by email</a></p>
+<a class="ad-sheet" href="mailto:secretary@willowmavinlc.org.au?subject=Christmas%20party%2C%2029%20November&amp;body=Hi%20Leanne%2C%0A%0APlease%20count%20us%20in%20for%20the%20joint%20Landcare%20Christmas%20party%20on%20Sunday%2029%20November.%0A%0AName%3A%0ANumber%20coming%3A%0AWhat%20we%20will%20bring%3A"><img src="assets/img/christmas-party-ad-1241.png" alt="Advertisement: Four groups, one long lunch. Willowmavin, Sunday Creek Dry Creek, Nulla Vale Pyalong West and Dabyminga Landcare groups are sharing a Christmas party. Sunday 29 November, from 12 noon, Broadford Living and Learning Centre. Bring a plate to share. RSVP to Leanne Cassar, Willowmavin Landcare." width="1241" height="1755" loading="lazy" decoding="async"></a>
+</div></aside>
+<aside class="ad" id="insects-ad" aria-label="Sunday 8 November, Broadford"><div class="ad-in">
+<p class="kick">Sunday 8 November, Broadford</p>
+<p class="ad-acts"><a class="btn light" href="mailto:scdclandcaregroup@gmail.com?subject=Insect%20talk%2C%20Sunday%208%20November&amp;body=Hi%20Ruby%2C%0A%0APlease%20book%20us%20for%20the%20insect%20talk%20at%20Broadford%20on%20Sunday%208%20November.%0A%0ANames%20and%20ages%3A">Book with Ruby</a></p>
+<a class="ad-sheet" href="assets/pdf/insects-talk-flyer.pdf"><img src="assets/img/insects-talk-flyer-1200.webp" alt="Flyer: What happens if insects go extinct? An insect and biodiversity talk for kids and families, held by Streamside Conservation Group with the support of Sunday Creek Dry Creek Landcare Group. Sunday 8 November, 10am to 11.30am, Broadford Living and Learning Centre. Bring a snack and an open mind. Suitable for kinder and primary school ages; light refreshments supplied. Numbers are limited, so book by contacting Ruby at scdclandcaregroup@gmail.com." width="1200" height="1698" loading="lazy" decoding="async"></a>
+</div></aside>
+<section class="sec pap" id="wawa-biik" aria-labelledby="wawa-biik-h">
+<figure class="lead wb-lead"><img src="assets/img/photo-2026-09-wawa-biik-walking-1200.webp" alt="A line of walkers in hats on a narrow track through open forest at Reedy Lake, wildflowers and young grass trees on either side." width="1200" height="800" loading="lazy" decoding="async"><figcaption><span class="cap">29 September 2026. Walking into the forest at Reedy Lake, Nagambie.</span> <span class="cr">Photograph: Cam O'Mara, Biolinks Alliance</span></figcaption></figure>
+<div class="in"><header class="ah"><p class="kick">On Taungurung Country</p><h2 id="wawa-biik-h">On Taungurung Country: a day at Reedy Lake</h2></header>
+<div class="txt"><p class="first">On Tuesday 29 September, I spent the day on Taungurung Country. Biolinks Alliance organised the <a href="https://wawabiik.com.au/" target="_blank" rel="noopener">wawa biik</a> cultural tour for partners in its Nature on Farms and Goldfields Forest Restoration projects, and the network was invited. We met at the Nagambie Lakes Regatta Centre, boarded the wawa biik bus, and travelled to Reedy Lake. Taungurung guides Ben and Anne welcomed us with a smoking ceremony, then led us through the site for the rest of the morning.</p>
+<p>The lake was full after a wet winter. River red gums stood knee-deep in water, the forest floor was thick with wildflowers, and the grass trees on the rises have grown there for centuries, through countless fires. Ben and Anne shared the story of the lake, the people who have cared for it for thousands of years, and how it was managed before fences: fire, harvest, and seasons read from plants instead of calendars. Lunch was Indigenous teas and bush foods.</p></div>
+<figure class="wide"><img src="assets/img/photo-2026-09-reedy-lake-red-gums-1280.webp" alt="Old river red gums standing in shallow water at Reedy Lake, fallen limbs and green reeds among their trunks." width="1280" height="854" loading="lazy" decoding="async"><figcaption><span class="cap">Reedy Lake with the water up.</span> <span class="cr">Photograph: Cam O'Mara, Biolinks Alliance</span></figcaption></figure>
+<aside class="wb-aside" aria-label="Biolinks Alliance"><p class="kick">Biolinks Alliance</p>
+<div class="wb-aside-in"><a class="wb-logo" href="https://biolinksalliance.org.au/" target="_blank" rel="noopener"><img src="assets/img/biolinks-alliance-logo-600.webp" alt="Biolinks Alliance, Connecting Central Victoria" width="600" height="252" loading="lazy" decoding="async"></a>
+<div><p>Biolinks Alliance made the day possible. Based in central Victoria, it connects nineteen Landcare networks, conservation management networks and environment groups, from the Grampians to the Alps. It runs pilot projects the rest of us can learn from: Nature on Farms, which brings natural solutions to working farms facing a drier climate; Goldfields Forest Restoration, reviving the box-ironbark forests; and Glideways, reconnecting glider habitat across the region. South West Goulburn has been a member for years, with Peter Mitchell as our representative for most of them.</p><p class="wb-url"><a href="https://biolinksalliance.org.au" target="_blank" rel="noopener">biolinksalliance.org.au</a></p></div></div></aside>
+<figure class="col"><img src="assets/img/photo-2026-09-reedy-lake-grass-trees-1200.webp" alt="Grass trees with full green skirts crowded under tall eucalypts on a rise above Reedy Lake." width="1200" height="800" loading="lazy" decoding="async"><figcaption><span class="cap">Grass trees on the rise above the lake.</span> <span class="cr">Photograph: Cam O'Mara, Biolinks Alliance</span></figcaption></figure>
+<blockquote class="pq"><p>The lake was full after a wet winter.</p></blockquote>
+<div class="txt"><p>wawa biik is Taungurung Cultural Experiences, operated from the Taungurung Land and Waters Council's office at 37 High Street, Broadford. Anyone can book a tour. The next major event is the <a href="#ev-mountains-to-rivers-festival-wawa-biik">Mountains to Rivers Festival</a> at Tahbilk, Nagambie, on Saturday 7 November (see 'What's on' below). The relationship the network has been building with the Council is now open: they see Landcare's work as closely aligned with their own, so where cultural waterway overlays cross the creeks we plant, their support will help shape our projects. That is the lasting outcome of the day. The wildflowers were a bonus.</p></div>
+<p class="wb-fund">Nature on Farms is funded by the Australian Government's Future Drought Fund; Goldfields Forest Restoration by the Ian Potter Foundation.</p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec hc" id="high-camp" aria-labelledby="high-camp-h">
+<header class="hc-band"><div class="in">
+<p class="hc-board" aria-hidden="true"><span>High Camp</span></p>
+<p class="kick">Glenaroua and the rail trail</p><h2 id="high-camp-h">High Camp station gets its sign back</h2>
+<p class="hc-from"><img src="assets/img/glenaroua-logo-700.png" alt="Glenaroua Land Management Group" width="700" height="297" loading="lazy" decoding="async"><span>From Glenaroua Land Management Group, sent in by its treasurer, Steve Koch.</span></p>
+</div></header>
+<figure class="hc-lead"><img src="assets/img/photo-1961-01-high-camp-station-1556.webp" alt="A cream and maroon rail motor stopped at the High Camp platform under gum trees, a passenger with bags walking away along the gravel platform past the weatherboard station building and a goods shed with a yellow sign reading Wool, Sheepskins, Hides, Rabbit Skins." width="1556" height="778" loading="lazy" decoding="async"><figcaption><span class="cap">January 1961. A Walker rail motor at the High Camp platform, the goods shed behind it buying wool, sheepskins, hides and rabbit skins.</span> <span class="cr">Photograph: Keith Atkinson, courtesy of the Friends of the Bendigo-Kilmore Rail Trail</span></figcaption></figure>
+<div class="in"><dl class="stats hc-stats"><div><dt><span class="n">1890</span></dt><dd>High Camp station opens to Glenaroua</dd></div><div><dt><span class="n">1968</span></dt><dd>the line closes</dd></div><div><dt><span class="n">$38,252</span></dt><dd>Tiny Towns Fund, Regional Development Victoria</dd></div><div><dt><span class="n">$6,500</span></dt><dd>Mitchell Shire Council</dd></div><div><dt><span class="n">$14,880</span></dt><dd>in kind, from community groups</dd></div></dl>
+<div class="txt"><p class="first">The site of the former High Camp Railway Station which served Glenaroua families from 1890 until its closure in 1968 is being transformed into a picnic reserve.</p>
+<p>The Friends of the Bendigo-Kilmore Rail Trail (FBKRT) were last year awarded a $38,252 Tiny Towns Fund grant from Regional Development Victoria (RDV), to support the revitalisation of the site in Crawfords Rd, High Camp.</p>
+<p>Support funding of $6,500 is being provided by Mitchell Shire Council, along with $14,880 of 'in-kind' from a number of community groups.</p>
+<p>Volunteers have spent the last few months clearing years of overgrowth and fallen tree branches at the neglected site adjacent to the High Camp Flora Reserve.</p>
+<p>A new High Camp railway sign has been placed on the old platform, along with an information board, picnic table and bicycle rack. The site will be planted out in April with native trees and shrubs.</p>
+<p>As part of the project volunteers have compiled a history of the Heathcote Junction to Heathcote line which, along with passengers, transported Glenaroua's dairy, livestock, timber and rabbit skins down south, returning on the journey north with household goods, superphosphate and the mail.</p></div>
+<figure class="hc-freight" aria-label="What the line carried">
+<div class="hc-sign"><p class="hc-dir"><span aria-hidden="true">&#8595;</span> Down south</p><ul><li>dairy</li><li>livestock</li><li>timber</li><li>rabbit skins</li></ul></div>
+<div class="hc-sign"><p class="hc-dir"><span aria-hidden="true">&#8593;</span> Back north</p><ul><li>household goods</li><li>superphosphate</li><li>the mail</li></ul></div>
+</figure>
+<div class="txt"><p>Several of Glenaroua's farming families were interviewed about their memories of the vital role the line once played in the district.</p>
+<p>The history can be read at <a href="https://bendigokilmorerailtrail.com/high-camp" target="_blank" rel="noopener">bendigokilmorerailtrail.com/high-camp</a></p></div>
+<p class="acts"><a class="btn" href="https://bendigokilmorerailtrail.com/high-camp/" target="_blank" rel="noopener">Read the High Camp history</a> <a class="btn ghost" href="https://bendigokilmorerailtrail.com/members/" target="_blank" rel="noopener">Join the Friends of the rail trail</a></p>
+<div class="hc-more">
+<figure class="hc-map"><a href="https://bendigokilmorerailtrail.com/high-camp/" target="_blank" rel="noopener"><img src="assets/img/fbkrt-line-map-900.webp" alt="Line map: the old railway from Melbourne to Heathcote Junction, then Kilmore, Moranding, High Camp (marked in red), Pyalong, Tooborac, Heathcote, Axedale and Bendigo. The main line runs separately through Wandong, Kilmore East, Broadford, Tallarook and Seymour." width="900" height="844" loading="lazy" decoding="async"></a><figcaption><span class="cap">The old line ran from Heathcote Junction through Kilmore, High Camp and Heathcote to Bendigo, west of the main line through Broadford and Seymour.</span> <span class="cr">Map: Friends of the Bendigo-Kilmore Rail Trail</span></figcaption></figure>
+<aside class="hc-aside" aria-label="Friends of the Bendigo-Kilmore Rail Trail"><a class="hc-logo" href="https://bendigokilmorerailtrail.com/" target="_blank" rel="noopener"><img src="assets/img/fbkrt-logo.png" alt="Friends of the Bendigo-Kilmore Rail Trail" width="431" height="107" loading="lazy" decoding="async"></a>
+<p>The Friends of the Bendigo-Kilmore Rail Trail look after the O'Keefe Rail Trail, 50 kilometres of box ironbark country from Bendigo to Heathcote on the route of the old Wandong, Heathcote and Sandhurst railway. Their next aim is the missing link, a trail from Wallan to Heathcote. They run family rides and a ride on the last Wednesday of each month, and anyone can join. The annual general meeting is on Wednesday 4 November, 6.30pm to 8pm.</p><p class="wb-url"><a href="https://bendigokilmorerailtrail.com" target="_blank" rel="noopener">bendigokilmorerailtrail.com</a></p></aside>
+</div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div></section>
+<section class="sec pap" id="timber-after-fire" aria-labelledby="timber-after-fire-h">
+<figure class="lead"><img src="assets/img/photo-2014-05-rebuilding-fences-1600.webp" alt="Four volunteers in high-visibility jackets lifting a new timber rail into place on a fence line, among burnt trees." width="1600" height="1200" loading="lazy" decoding="async"><figcaption><span class="cap">May 2014. Volunteers rebuilding fences after the Kilmore-Mickleham fire.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<div class="in"><header class="ah"><p class="kick">Disaster recovery</p><h2 id="timber-after-fire-h">After the next disaster: what should happen to the debris?</h2></header>
+<div class="txt"><p class="first">Every disaster leaves a pile. After the January fires, it was burnt trees pushed up and burnt again or trucked away; after a flood, it's the timber and silt a creek dumps across a paddock; after a storm, it's fallen limbs. Councils and the agencies behind them clear it to a deadline, under contract, with the material treated as rubbish, because no one told them in advance it was anything else.</p>
+<p>Landcare has learnt the hard way to ask early. Formal guidance for councils, agreed before disasters strike, works better than scrounging for material afterwards. The Goulburn Broken's Landcare coordinators and facilitators met at Euroa on 14 October and agreed to put such a list to the agencies responsible for recovery. Hollow logs should stay where they fall: they're the only hollows the paddock will have for fifty years. Sound trunks should go to a portable mill for the fences lost in the fire, not to the heap. Limbs can become stakes and guards for the replanting that follows. Firewood is what's left, not the first use. Who holds the machinery, what sizes are suitable, and what a volunteer crew is allowed to do are details to settle now.</p>
+<blockquote class="pq"><p>Hollow logs should stay where they fall: they're the only hollows the paddock will have for fifty years.</p></blockquote>
+<p>If you've experienced this, or run a mill, chipper or nest box crew, let us know what should be on the list. Send a paragraph to <a href="mailto:swglandcare@gmail.com?subject=Debris%20after%20a%20disaster%3A%20what%20I%20would%20want%20on%20the%20list&amp;body=Hi%20Luca%2C%0A%0AHere%20is%20what%20I%20would%20want%20done%20with%20the%20timber%20and%20debris%20next%20time%3A%0A%0A">swglandcare@gmail.com</a> or call 0409 515 630.</p></div>
+<p class="acts"><a class="btn" href="mailto:swglandcare@gmail.com?subject=Debris%20after%20a%20disaster%3A%20what%20I%20would%20want%20on%20the%20list&amp;body=Hi%20Luca%2C%0A%0AHere%20is%20what%20I%20would%20want%20done%20with%20the%20timber%20and%20debris%20next%20time%3A%0A%0A">Send me your list</a></p>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec vs" id="serrated-tussock" aria-labelledby="serrated-tussock-h">
+<header class="vband"><div class="in"><p class="kick">Victorian Serrated Tussock Working Party</p><h2 id="serrated-tussock-h">Cut the heads before they turn gold</h2></div></header>
+<figure class="vlead"><img src="assets/img/tussock-paddock-1100.jpg" alt="A paddock of serrated tussock in seed, the flowering heads giving the whole paddock a purple tinge. Photograph: Victorian Serrated Tussock Working Party." width="1100" height="728" loading="lazy" decoding="async"><figcaption><span class="cr">Photograph: Victorian Serrated Tussock Working Party</span></figcaption></figure>
+<div class="in"><dl class="stats vstats"><div><dt><span class="n">250,000</span><span class="u">ha</span></dt><dd>of Victoria under serrated tussock, and more</dd></div><div><dt><span class="n">20</span><span class="u">km</span></dt><dd>how far the wind carries the seed</dd></div></dl>
+<div class="vbody"><img class="vlogo" src="assets/img/vstwp-logo.png" alt="Victorian Serrated Tussock Working Party" width="660" height="480" loading="lazy" decoding="async">
+<p class="first">Serrated tussock is a Weed of National Significance and infests more than 250,000 hectares of Victoria. One plant produces tens of thousands of seeds, which the wind can carry up to twenty kilometres. The seeds remain viable in the soil for seven years. Livestock will not eat it; at ninety percent fibre, it's nearly indigestible. The Working Party's March map shows new infestations following the main roads out of Melbourne, with Redesdale and Mia Mia named on our Heathcote side.</p>
+<p>Spring is when it becomes visible. From late October, the flowering heads give the paddock a purple hue; eight to ten weeks later, the seed is ripe and the heads turn gold. Purple means you're in time. Gold means the seed is wind-borne, then it's your neighbour's problem too.</p>
+<p>The job for the next month is straightforward. Walk the boundaries, then the roadsides. Pull the leaf between finger and thumb: serrated tussock rolls smoothly like a needle, while native tussocks feel flat-edged. Cut every flowering head, bag it, and mark the plant. Don't slash, mow or harvest through a patch in seed. Don't allow a contractor's machine on the property unless it's clean. Kill the plant itself in autumn, when herbicide windows open.</p>
+<blockquote class="pq"><p>Purple means you're in time. Gold means the seed is wind-borne, then it's your neighbour's problem too.</p></blockquote>
+<p>Weeds don't respect property boundaries. A single plant left to seed this spring can become a paddock full in three years, so the neighbour checking over the fence in late October is doing you a favour. The Working Party's identification guides, treatment videos and control calendar are all free at <a href="https://serratedtussock.com" target="_blank" rel="noopener">serratedtussock.com</a>. Ivan Carter answers calls from landholders who think they've found it on 0422 605 953 or <a href="mailto:info@serratedtussock.com?subject=Serrated%20tussock%3A%20I%20think%20I%20have%20found%20it&amp;body=Hi%20Ivan%2C%0A%0AI%20think%20I%20have%20found%20serrated%20tussock.%0A%0AWhere%3A%0AHow%20much%3A%0APhone%3A">info@serratedtussock.com</a>. Mitchell Shire lists serrated tussock as one of its two featured weeds this spring, and its land management officers can help landholders write a weed plan before enforcement is ever an issue.</p>
+<figure class="vend"><img src="assets/img/tussock-plant-600.jpg" alt="One mature serrated tussock plant in seed, its heads weeping to the ground. Photograph: Victorian Serrated Tussock Working Party." width="600" height="337" loading="lazy" decoding="async"><figcaption><span class="cr">Photograph: Victorian Serrated Tussock Working Party</span></figcaption></figure></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div></section>
+<aside class="ad" id="turtle-ad" aria-label="November is Turtle Month"><div class="ad-in">
+<p class="kick">November is Turtle Month</p>
+<p class="ad-acts"><a class="btn light" href="https://www.turtlesat.org.au/" target="_blank" rel="noopener">Record a sighting on TurtleSAT</a></p>
+<a class="ad-sheet" href="assets/pdf/turtlesat-poster-a3.pdf"><img src="assets/img/turtlesat-poster-1200.webp" alt="Poster, November is Turtle Month. See it. Snap it. TurtleSAT it. Three freshwater turtles live in Mitchell Shire and all three are in decline: the Eastern Long-necked Turtle, still common but declining; the Broad-shelled Turtle, endangered in Victoria; and the Murray River Turtle, critically endangered in Victoria. From October to December the females leave the Goulburn River, Sunday Creek, King Parrot Creek and farm dams to nest in open paddocks. See a turtle, take one photo from a few steps back, and record it in the free TurtleSAT app at turtlesat.org.au. South West Goulburn Landcare Network, 0409 515 630, swglandcare@gmail.com." width="1200" height="1698" loading="lazy" decoding="async"></a>
+</div></aside>
+<section class="sec cream panel" id="forum" aria-labelledby="forum-h">
+<div class="in"><header class="ah"><p class="kick">Victorian Landcare Forum</p><h2 id="forum-h">Two days at Pakenham</h2></header>
+<div class="txt"><p class="first">The Victorian Landcare Forum filled the Cardinia Cultural Centre at Pakenham for two days at the start of September, bringing together more than 220 facilitators, committee members and landholders from every catchment in the state. The conversations in the car park were as lively as those in the sessions. I attended on behalf of the network.</p>
+<p>The session that filled fastest was on deer: Jillian Staton on how her Cape Liptrap neighbours in South Gippsland organised their own deer control, and Johannes Wenzel on why every catchment in the state is in the same position. What that means for us is in the deer article below.</p>
+<blockquote class="pq"><p>The conversations in the car park were as lively as those in the sessions.</p></blockquote>
+<p>Carolyn Hall of the Mulloon Institute gave a talk that had people still discussing it the next day. "From catchment to coast: partnering with Landcare to rehydrate landscapes" was about slowing water as it moves through a catchment so it sinks in and stays, using structures in waterways and changing grazing beside them. The Institute's own creek near Braidwood is the proof. Victorian examples are fewer and more recent. New South Wales has an approval pathway for these works; Victoria does not, so whether a leaky weir is permitted as a waterway project or classified as a dam depends on the authority. Anyone with a creek on their property will understand why this matters.</p>
+<p>In between, Anthony Gallacher launched Landcare Victoria's "Landscape Action Plan Handbook". The trade stands were full of tree guards and stakes (three of those suppliers have since quoted for the Argyle planting), and the Wednesday field trips headed into the Cardinia hills.</p></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec deer" id="deer" aria-labelledby="deer-h">
+<div class="deer-panel"><div class="in"><p class="kick">Pest animals</p><h2 id="deer-h">Deer: yours to shoot, no one's to manage</h2>
+<blockquote class="pq big"><p>Deer have no such declaration. Every other mainland state has made one.</p></blockquote></div></div>
+<div class="in"><div class="txt"><p class="first">Start with what helps. Every deer in Victoria is classified as wildlife, and six species are considered game, but a separate order declares deer unprotected on private property. You may destroy deer damaging your property, crops or livestock at any time of year, with no game licence and no permit. All that's required is a firearms licence. Spotlights are allowed on your own land, anyone acting for you just needs your written permission, and you keep the meat. Hog deer are the exception.</p>
+<p>So the practical reality is better than most landholders assume. The legal situation, however, is odd. Rabbits and foxes are declared pests, obliging every landholder to control them and providing a funding stream for the task. Deer have no such declaration. Every other mainland state has made one. Victoria has not, so there's no duty for landholders, no basis for coordinated action across boundaries, and no funding. Peter Jacobs of the Victorian Deer Control Community Network put it plainly: landholders receive no government support, funding or advice for control.</p>
+<p>The cost is only counted where there's a receipt. Feral deer cost Australia $91.3 million in 2021, $69.1 million of that to agriculture. One projection put the cost to Victoria alone at $1.5 to $2.2 billion over thirty years if numbers aren't brought down. Neither figure includes an understorey browsed out over twenty years, a pugged creek crossing or a failed direct-seeding line. The authors of the Victorian projection said the biodiversity cost would likely be enormous and couldn't be priced. What's left out is the very part Landcare exists to protect.</p>
+<p>In October 2025, the Victorian Government responded to the independent review of the Wildlife Act. The review recommended declaring all deer a pest animal. The government marked the recommendation "not supported", largely due to hunting interests: the Australian Deer Association argued that losing game status would cost 50,000 recreational hunters their access to public land and the Game Management Authority most of its revenue. That argument prevailed. The Outdoor Recreation Victoria Bill 2026, passed this year, merges the authority into a new body and leaves the status of deer unchanged.</p>
+<p>The frustration is statewide. At the Landcare Forum in Pakenham, the deer session attracted the largest crowd, and Johannes Wenzel of the Victorian Deer Control Community Network described the same trend across every catchment: numbers rising, landholders left to manage deer alone. The one group that has found a way forward is at Cape Liptrap in South Gippsland, where Jillian Staton's neighbours formed the Cape Liptrap Community Deer Control Group. Every landholder signs a permission form, a map shows whose gates are open, commercial harvesters are paid, and a communications plan is published. None of this required a change of law. Nearly all of it could be adapted to Sunday Creek or Dabyminga, and the South Gippsland network has offered to share their paperwork. The one line they don't cross, and nor would we, is vetting or placing hunters on other people's land.</p>
+<p>Our own representatives have said little. Annabelle Cleeland, Member for Euroa, has not raised deer in the Victorian Parliament. Sam Birrell, Member for Nicholls, has not raised them in Canberra. Of the five Northern Victoria members in the upper house, Gaelle Broad has come closest, asking the Minister for Agriculture on 17 June what more would be done about weeds and pests, deer among them, on Crown land. Senior Nationals argue in Parliament that deer are a serious pest and that more recreational hunting is the answer. Expect to hear that argument.</p>
+<p>There is no inquiry, consultation or petition open, so a letter to your member is the available avenue. A letter won't change the law on its own, but it puts a named constituent, with an address in the electorate and a paddock of evidence, on the record against a position the member hasn't yet had to defend locally. Enough letters make the position harder to hold.</p>
+<p>Write to Annabelle Cleeland, and to Gaelle Broad and Wendy Lovell in the upper house. For the National Feral Deer Action Plan, write to Sam Birrell. Keep it short and personal: where you farm, for how long, and what deer have done on your property: the trail camera count, lost seedlings, damaged fences, creek crossings. Ask for three things: declare deer an established pest animal, remove game status so control is not tied to hunting seasons, and fund control across property boundaries, because deer roam thousands of hectares and cannot be managed one paddock at a time. Ask for the member's position in writing. Send it before the election on Saturday 28 November. If enough members want to go further, an e-petition can be lodged with the Legislative Assembly and I will draft it.</p></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div></section>
+<section class="sec pap" id="network-news" aria-labelledby="network-news-h">
+<figure class="lead"><img src="assets/img/photo-2023-06-camerons-creek-crowd-1280.webp" alt="A crowd of planters cheering, fists in the air, beside freshly guarded tubestock at the Camerons Creek planting." width="1280" height="960" loading="lazy" decoding="async"><figcaption><span class="cap">June 2023. Camerons Creek planting, the crowd.</span> <span class="cr">Photograph: SWGLN archive</span></figcaption></figure>
+<div class="in"><header class="ah"><p class="kick">Network round-up</p><h2 id="network-news-h">What the network has been up to</h2></header>
+<div class="txt"><p class="first">The annual general meeting took place on 14 October in Broadford, followed by the committee meeting. Jenny McInnes was elected president and also took on the secretary's role, with Ian Christie as vice president, Nicole Maxwell as treasurer, and Narelle Ayson as minute secretary. Jenny also represents the network at the catchment authority's chairs' network and at Biolinks Alliance. Paul Fleming retired from the committee after sixteen years (most as the grant form signatory and chair of Glenaroua's plantings) and handed over the chair for the elections as his final act.</p>
+<p>The 2027 planting is set: Glenaroua Land Management Group will plant at Argyle, Glenaroua, on the weekend of 19 to 20 June 2027. The TreeProject order went in on 1 October: 4,000 seedlings across 34 species matched to the Grassy Woodland class, about 3,000 of them for the site and 1,000 ordered by members for their own properties at a dollar each. Planting will be at three-metre spacing along pre-prepared rip lines. Quotes for guards and stakes are in.</p>
+<p>Lyndale Park: Peter Mitchell and I walked the property with the owners on 8 October to set up the photo points and begin the vegetation record. The field day for members is Saturday 14 November. Details are in this issue.</p>
+<p>The nest box project is now a kit. Each design is drawn at full size on an A0 sheet, glued to a standard 17 mm plywood sheet and cut along the lines, so the sheet serves as cutting guide, drill guide and instructions all in one. Three sheets give nine boxes. Every design is sized for a species in trouble here. The draft is with regional facilitators and the catchment authority for review; local schools will see it next.</p>
+<blockquote class="pq"><p>Three sheets give nine boxes. Every design is sized for a species in trouble here.</p></blockquote>
+<p>Scaling Success, the Future Drought Fund training program run with Up2Us Landcare Alliance, has a two-year plan for our district: student blocks and landholder field days, with the first block in autumn 2027. If you have a paddock, water system or grazing change worth showing to fifteen agriculture students, <a href="mailto:swglandcare@gmail.com?subject=Scaling%20Success%3A%20a%20paddock%20to%20show%20the%20students&amp;body=Hi%20Luca%2C%0A%0AI%20have%20something%20worth%20showing%20the%20agriculture%20students.%0A%0AWhat%20it%20is%3A%0AWhere%3A%0APhone%3A">please get in touch</a>.</p>
+<p>Other updates: The Queensland fruit fly posters went to the Seymour Show on 2 and 3 October with Pam Beerens of the Seymour Agricultural and Pastoral Society. Assumption College and the network are building a Junior Landcare arrangement after the August planting on Kilmore Creek. The website at <a href="https://swglandcare.org.au" target="_blank" rel="noopener">swglandcare.org.au</a> has been live since late August; people searching for Landcare in the district are finding it, with several enquiries a month now arriving that way.</p></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<section class="sec pap" id="whats-on" aria-labelledby="whats-on-h">
+<div class="in"><header class="ah"><p class="kick">Calendar</p><h2 id="whats-on-h">What's on: late October to December</h2></header>
+<div class="cal-top"><p>Add every date below to your phone or desktop calendar in one go: <a href="SWGLN-whats-on-Oct-Dec-2026.ics" download>download the calendar file</a>. It opens in Apple Calendar, Google Calendar, and Outlook.</p><p><a class="btn" href="SWGLN-whats-on-Oct-Dec-2026.ics" download>Add every date to your calendar</a></p></div>
+<section class="cal-m" aria-labelledby="cal-October"><h3 class="cal-mh" id="cal-October">October <span>2026</span></h3>
+<ol class="cal">
+<li class="ev" id="ev-aussie-bird-count">
+ <time class="tile" datetime="2026-10-19"><span class="wd">Mon</span><span class="d">19</span><span class="mo">Oct</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://aussiebirdcount.org.au" target="_blank" rel="noopener">Aussie Bird Count</a></h4><p class="ev-when">19 to 25 October</p></div>
+ <div class="ev-where"><p class="ev-v">Anywhere</p><p class="ev-n">Twenty minutes, free app <a class="fnref" href="#fn5" aria-label="Footnote 5">5</a></p></div>
+</li>
+<li class="ev" id="ev-40-years-of-landcare-goulburn-broken-celebration">
+ <time class="tile" datetime="2026-10-23"><span class="wd">Fri</span><span class="d">23</span><span class="mo">Oct</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeqdMboOZ9k3erumsKJpOqSr_TDNOOjtURUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u" target="_blank" rel="noopener">40 Years of Landcare, Goulburn Broken celebration</a></h4><p class="ev-when">5pm to 7pm</p></div>
+ <div class="ev-where"><p class="ev-v">Seven Creeks Hotel, 2 Tarcombe St, Euroa</p><p class="ev-n">Free, finger food. RSVP form <a class="fnref" href="#fn1" aria-label="Footnote 1">1</a></p></div>
+</li>
+<li class="ev" id="ev-native-plant-propagation-with-kate-toogood">
+ <time class="tile" datetime="2026-10-24"><span class="wd">Sat</span><span class="d">24</span><span class="mo">Oct</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://events.humanitix.com/native-plant-propagation-workshop-95s39p8w" target="_blank" rel="noopener">Native plant propagation with Kate Toogood</a></h4><p class="ev-when">9.30am to 12pm</p></div>
+ <div class="ev-where"><p class="ev-v">35 Cleves Rd North, Upper Plenty</p><p class="ev-n">Cuttings and division, take a plant home. Book <a class="fnref" href="#fn2" aria-label="Footnote 2">2</a></p></div>
+</li>
+<li class="ev" id="ev-willowmavin-biolink-blitz-the-fourth">
+ <time class="tile" datetime="2026-10-25"><span class="wd">Sun</span><span class="d">25</span><span class="mo">Oct</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://events.humanitix.com/willowmavin-4th-biolink-blitz" target="_blank" rel="noopener">Willowmavin Biolink Blitz, the fourth</a></h4><p class="ev-when">9.30am to 1.30pm</p></div>
+ <div class="ev-where"><p class="ev-v">Willowmavin, site sent on registration</p><p class="ev-n">Then every fortnight to Christmas. Register <a class="fnref" href="#fn3" aria-label="Footnote 3">3</a></p></div>
+</li>
+<li class="ev" id="ev-beam-mitchell-environment-group-agm-and-dinner">
+ <time class="tile" datetime="2026-10-27"><span class="wd">Tue</span><span class="d">27</span><span class="mo">Oct</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://www.beam.org.au/events-1/community-dinner-and-annual-general-meeting-2026" target="_blank" rel="noopener">BEAM Mitchell Environment Group AGM and dinner</a></h4><p class="ev-when">6pm</p></div>
+ <div class="ev-where"><p class="ev-v">Kilmore Library, 12 Sydney St</p><p class="ev-n">Cathy Olive on native garden plants. RSVP <a class="fnref" href="#fn4" aria-label="Footnote 4">4</a></p></div>
+</li>
+</ol></section>
+<section class="cal-m" aria-labelledby="cal-November"><h3 class="cal-mh" id="cal-November">November <span>2026</span></h3>
+<ol class="cal">
+<li class="ev" id="ev-mountains-to-rivers-festival-wawa-biik">
+ <time class="tile" datetime="2026-11-07"><span class="wd">Sat</span><span class="d">7</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://wawabiik.com.au/mtrfest/" target="_blank" rel="noopener">Mountains to Rivers Festival, wawa biik</a></h4><p class="ev-when">10am to 4pm</p></div>
+ <div class="ev-where"><p class="ev-v">Tahbilk Estate, Nagambie</p><p class="ev-n">Storytelling, wetland walks, makers market. Tickets <a class="fnref" href="#fn6" aria-label="Footnote 6">6</a></p></div>
+</li>
+<li class="ev" id="ev-wildlife-fungi-and-fire-conference">
+ <time class="tile" datetime="2026-11-08"><span class="wd">Sun</span><span class="d">8</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://events.humanitix.com/wildlife-fungi-and-fire" target="_blank" rel="noopener">Wildlife, Fungi and Fire conference</a></h4><p class="ev-when">9.15am to 1.15pm</p></div>
+ <div class="ev-where"><p class="ev-v">Euroa Community Conference Centre, Memorial Oval</p><p class="ev-n">$25, free for pensioners, students and fire-affected landholders <a class="fnref" href="#fn7" aria-label="Footnote 7">7</a></p></div>
+</li>
+<li class="ev" id="ev-what-happens-if-insects-go-extinct-for-children">
+ <time class="tile" datetime="2026-11-08"><span class="wd">Sun</span><span class="d">8</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="mailto:scdclandcaregroup@gmail.com?subject=Insect%20talk%2C%20Sunday%208%20November&amp;body=Hi%20Ruby%2C%0A%0APlease%20book%20us%20for%20the%20insect%20talk%20at%20Broadford%20on%20Sunday%208%20November.%0A%0ANames%20and%20ages%3A">What happens if insects go extinct? For children</a></h4><p class="ev-when">10am to 11.30am</p></div>
+ <div class="ev-where"><p class="ev-v">Broadford Living and Learning Centre</p><p class="ev-n">Sunday Creek Dry Creek's Streamside group. Book with ages <a class="fnref" href="#fn8" aria-label="Footnote 8">8</a></p></div>
+</li>
+<li class="ev" id="ev-lyndale-park-field-day-walk-and-covram-records">
+ <time class="tile" datetime="2026-11-14"><span class="wd">Sat</span><span class="d">14</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">Lyndale Park field day, walk and Covram records</a></h4><p class="ev-when">morning</p></div>
+ <div class="ev-where"><p class="ev-v">465 Tallarook-Pyalong Rd, Tallarook</p><p class="ev-n">Free, lunch, times with your booking <a class="fnref" href="#fn9" aria-label="Footnote 9">9</a></p></div>
+</li>
+<li class="ev" id="ev-scent-detection-dog-workshop">
+ <time class="tile" datetime="2026-11-14"><span class="wd">Sat</span><span class="d">14</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="mailto:ugln.projects@ugln.net?subject=Scent%20detection%20dog%20workshop%2C%2014%20November&amp;body=Hi%20Chris%2C%0A%0APlease%20register%20me%20for%20the%20scent%20detection%20dog%20workshop%20at%20Strath%20Creek%20on%20Saturday%2014%20November.%0A%0AName%3A%0APhone%3A">Scent detection dog workshop</a></h4><p class="ev-when">10am</p></div>
+ <div class="ev-where"><p class="ev-v">Strath Creek Hall, 10 Ferguson St</p><p class="ev-n">Free, light lunch, places limited. Chris Cobern <a class="fnref" href="#fn10" aria-label="Footnote 10">10</a></p></div>
+</li>
+<li class="ev" id="ev-dabyminga-landcare-agm">
+ <time class="tile" datetime="2026-11-15"><span class="wd">Sun</span><span class="d">15</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t">Dabyminga Landcare AGM</h4><p class="ev-when">4pm</p></div>
+ <div class="ev-where"><p class="ev-v">Tallarook, venue in Mark South's newsletter</p><p class="ev-n">Hall booked out. New members welcome</p></div>
+</li>
+<li class="ev" id="ev-glenaroua-land-management-group-meeting">
+ <time class="tile" datetime="2026-11-19"><span class="wd">Thu</span><span class="d">19</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="mailto:swglandcare@gmail.com?subject=Glenaroua%20meeting%2C%2019%20November&amp;body=Hi%20Luca%2C%0A%0AI%20would%20like%20to%20come%20to%20the%20Glenaroua%20Land%20Management%20Group%20meeting%20on%20Thursday%2019%20November.%20Please%20let%20the%20group%20know.%0A%0AName%3A">Glenaroua Land Management Group meeting</a></h4><p class="ev-when">6.30pm</p></div>
+ <div class="ev-where"><p class="ev-v">Glenaroua fire shed</p><p class="ev-n">BYO barbecue, meeting 7.30pm, soil moisture probes</p></div>
+</li>
+<li class="ev" id="ev-meet-the-farmer-national-agriculture-day">
+ <time class="tile" datetime="2026-11-21"><span class="wd">Sat</span><span class="d">21</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://events.humanitix.com/upper-plenty-agday" target="_blank" rel="noopener">Meet the Farmer, National Agriculture Day</a></h4><p class="ev-when">9.30am to 2.30pm</p></div>
+ <div class="ev-where"><p class="ev-v">The Shack, 1240 Wallan-Whittlesea Rd, Upper Plenty</p><p class="ev-n">Produce stalls, speakers. Register <a class="fnref" href="#fn11" aria-label="Footnote 11">11</a></p></div>
+</li>
+<li class="ev" id="ev-victorian-state-election">
+ <time class="tile" datetime="2026-11-28"><span class="wd">Sat</span><span class="d">28</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t">Victorian state election</h4></div>
+ <div class="ev-where"></div>
+</li>
+<li class="ev" id="ev-joint-landcare-christmas-party">
+ <time class="tile" datetime="2026-11-29"><span class="wd">Sun</span><span class="d">29</span><span class="mo">Nov</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="mailto:secretary@willowmavinlc.org.au?subject=Christmas%20party%2C%2029%20November&amp;body=Hi%20Leanne%2C%0A%0APlease%20count%20us%20in%20for%20the%20joint%20Landcare%20Christmas%20party%20on%20Sunday%2029%20November.%0A%0AName%3A%0ANumber%20coming%3A%0AWhat%20we%20will%20bring%3A">Joint Landcare Christmas party</a></h4><p class="ev-when">from 12 noon</p></div>
+ <div class="ev-where"><p class="ev-v">Broadford Living and Learning Centre</p><p class="ev-n">Willowmavin, Sunday Creek Dry Creek, Nulla Vale Pyalong West and Dabyminga. Bring a plate. RSVP <a class="fnref" href="#fn13" aria-label="Footnote 13">13</a></p></div>
+</li>
+</ol></section>
+<section class="cal-m" aria-labelledby="cal-December"><h3 class="cal-mh" id="cal-December">December <span>2026</span></h3>
+<ol class="cal">
+<li class="ev" id="ev-detox-your-home">
+ <time class="tile" datetime="2026-12-12"><span class="wd">Sat</span><span class="d">12</span><span class="mo">Dec</span></time>
+ <div class="ev-what"><h4 class="ev-t"><a href="https://www.mitchellshire.vic.gov.au/events/detox-your-home-seymour" target="_blank" rel="noopener">Detox Your Home</a></h4><p class="ev-when">9am to 12pm</p></div>
+ <div class="ev-where"><p class="ev-v">Seymour Resource Recovery Centre</p><p class="ev-n">Free household chemical disposal, register <a class="fnref" href="#fn12" aria-label="Footnote 12">12</a></p></div>
+</li>
+</ol></section>
+<section class="fns" aria-labelledby="fn-h"><h3 id="fn-h" class="fn-h">Links, for the printed page</h3>
+<ol class="fnlist">
+<li id="fn1"><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeqdMboOZ9k3erumsKJpOqSr_TDNOOjtURUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u" target="_blank" rel="noopener">RSVP form at forms.cloud.microsoft, linked from the event</a></li>
+<li id="fn2"><a href="https://events.humanitix.com/native-plant-propagation-workshop-95s39p8w" target="_blank" rel="noopener">events.humanitix.com/native-plant-propagation-workshop-95s39p8w</a></li>
+<li id="fn3"><a href="https://events.humanitix.com/willowmavin-4th-biolink-blitz" target="_blank" rel="noopener">events.humanitix.com/willowmavin-4th-biolink-blitz</a></li>
+<li id="fn4"><a href="https://www.beam.org.au/events-1/community-dinner-and-annual-general-meeting-2026" target="_blank" rel="noopener">beam.org.au/events-1/community-dinner-and-annual-general-meeting-2026</a></li>
+<li id="fn5"><a href="https://aussiebirdcount.org.au" target="_blank" rel="noopener">aussiebirdcount.org.au</a></li>
+<li id="fn6"><a href="https://wawabiik.com.au/mtrfest/" target="_blank" rel="noopener">wawabiik.com.au/mtrfest</a></li>
+<li id="fn7"><a href="https://events.humanitix.com/wildlife-fungi-and-fire" target="_blank" rel="noopener">events.humanitix.com/wildlife-fungi-and-fire</a></li>
+<li id="fn8"><a href="mailto:scdclandcaregroup@gmail.com?subject=Insect%20talk%2C%20Sunday%208%20November&amp;body=Hi%20Ruby%2C%0A%0APlease%20book%20us%20for%20the%20insect%20talk%20at%20Broadford%20on%20Sunday%208%20November.%0A%0ANames%20and%20ages%3A">scdclandcaregroup@gmail.com</a></li>
+<li id="fn9">Luca Brew, 0409 515 630, <a href="mailto:swglandcare@gmail.com?subject=Lyndale%20Park%20field%20day%2C%20Saturday%2014%20November&amp;body=Hi%20Luca%2C%0A%0APlease%20book%20me%20in%20for%20the%20Lyndale%20Park%20field%20day%20on%20Saturday%2014%20November.%0A%0AName%3A%0ANumber%20coming%3A%0APhone%3A%0A%0AI%20have%20installed%20Covram%3A%20yes%20%2F%20not%20yet">swglandcare@gmail.com</a></li>
+<li id="fn10"><a href="mailto:ugln.projects@ugln.net?subject=Scent%20detection%20dog%20workshop%2C%2014%20November&amp;body=Hi%20Chris%2C%0A%0APlease%20register%20me%20for%20the%20scent%20detection%20dog%20workshop%20at%20Strath%20Creek%20on%20Saturday%2014%20November.%0A%0AName%3A%0APhone%3A">ugln.projects@ugln.net</a>, 0413 855 490</li>
+<li id="fn11"><a href="https://events.humanitix.com/upper-plenty-agday" target="_blank" rel="noopener">events.humanitix.com/upper-plenty-agday</a></li>
+<li id="fn12"><a href="https://www.mitchellshire.vic.gov.au/events/detox-your-home-seymour" target="_blank" rel="noopener">mitchellshire.vic.gov.au, search Detox Your Home</a></li>
+<li id="fn13">Leanne Cassar, <a href="mailto:secretary@willowmavinlc.org.au?subject=Christmas%20party%2C%2029%20November&amp;body=Hi%20Leanne%2C%0A%0APlease%20count%20us%20in%20for%20the%20joint%20Landcare%20Christmas%20party%20on%20Sunday%2029%20November.%0A%0AName%3A%0ANumber%20coming%3A%0AWhat%20we%20will%20bring%3A">secretary@willowmavinlc.org.au</a></li>
+</ol></section>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+<aside class="ad" id="meet-the-farmer-ad" aria-label="Saturday 21 November, Upper Plenty"><div class="ad-in">
+<p class="kick">Saturday 21 November, Upper Plenty</p>
+<p class="ad-acts"><a class="btn light" href="https://events.humanitix.com/upper-plenty-agday" target="_blank" rel="noopener">Register on Humanitix</a></p>
+<a class="ad-sheet" href="https://events.humanitix.com/upper-plenty-agday" target="_blank" rel="noopener"><img src="assets/img/meet-the-farmer-ad-1241.png" alt="Advertisement: Meet the farmer, National Agriculture Day, Upper Plenty. Saturday 21 November, 9.30am to 2.30pm, The Shack, Upper Plenty Mechanics Institute Hall, 1240 Wallan-Whittlesea Road, Upper Plenty. Local producers, lunch, cake and coffee, speakers, a hamper to win. Register on Humanitix at events.humanitix.com/upper-plenty-agday. Producers wanting a stall ring Paul Gruigan on 0488 905 757. Hosted by the Upper Plenty Merri Catchments Landcare Group." width="1241" height="1755" loading="lazy" decoding="async"></a>
+</div></aside>
+<section class="sec pap" id="neighbours" aria-labelledby="neighbours-h">
+<div class="in"><header class="ah"><p class="kick">Around the catchment</p><h2 id="neighbours-h">From our neighbours</h2></header>
+<div class="txt nb"><p>The state awards: The Victorian Landcare Awards were presented at Fed Square on 15 October, with 99 nominations across 14 categories. TreeProject, the Melbourne volunteer nursery that grows the 4,000 seedlings Glenaroua plants next June, won the Environmental Volunteer Group award. Wodonga Urban Landcare Network was named Landcare Network of the Year. (Source: Landcare Australia's release, 15 October, <a href="https://landcareaustralia.org.au" target="_blank" rel="noopener">landcareaustralia.org.au</a>.)</p>
+<p>Nearly $300,000 for the catchment: The Victorian Government Landcare Grants for 2026 have directed almost $300,000 to Goulburn Broken groups. Fire recovery work is funded at Goomalibee, Creightons Creek, Longwood East, the Euroa Arboretum and the Strathbogie Ranges Conservation Management Network. Sheep Pen Creek will study its lace monitors. (Source: Goulburn Broken CMA October news, <a href="https://gbcma.vic.gov.au" target="_blank" rel="noopener">gbcma.vic.gov.au</a>.)</p>
+<p>Longwood, nine months on: CMA staff returned in September to the vegetation transects set in April after the fire. Grasses and wildflowers are back in the ground layer, tree and shrub seedlings are coming up, and the insects, fungi, frogs and birds are returning. The severely burnt forest has a long road ahead. (Source: CMA's fire recovery page.)</p>
+<p>Mitchell's mapping: The shire's own field mapping platform, M-SNAP, was a finalist in the Municipal Association of Victoria's innovation awards. At the Australian Plants Society expo in Wallan in September, more than 400 people attended and 27 households joined Gardens for Wildlife. (Source: Green Scene 16, 7 October, <a href="https://mitchellshire.vic.gov.au" target="_blank" rel="noopener">mitchellshire.vic.gov.au</a>.)</p>
+<p>Bird flu: The H5 strain is present in wild birds in Victoria. Leave sick or dead birds alone. Report five or more dead birds together, or any single dead waterbird, seabird, shorebird, raptor or marine mammal, to 1800 675 888. (Source: Landcare Victoria October newsletter.)</p>
+<p>Platypus and dogs: October is Platypus Month. Off-leash dogs at the creek kill platypus; keep dogs on a lead near water and log any sighting at <a href="https://platypusspot.org" target="_blank" rel="noopener">platypusspot.org</a>. (Source: Waterwatch Victoria.)</p>
+<p>The election: Victoria votes on Saturday 28 November. The Department of Energy, Environment and Climate Action enters caretaker mode from 3 November, so expect no new government decisions until December. Landcare Victoria has a two-page summary of what the sector is seeking in the next budget, useful for anyone talking to a candidate. <a href="https://landcarevictoria.org.au" target="_blank" rel="noopener">landcarevictoria.org.au</a></p></div>
+<p class="totoc"><a href="#in-this-issue">Contents</a></p></div>
+</section>
+</main>
+</div>
+
+<footer class="foot"><div class="in">
+<div class="fgrid">
+ <div>
+  <h2 class="fh">Get in touch</h2>
+  <p><strong>Luca Brew</strong><br>Landcare Facilitator<br>South West Goulburn Landcare Network</p>
+  <p><a href="tel:+61409515630">0409 515 630</a><br><a href="mailto:swglandcare@gmail.com?subject=A%20question%20for%20the%20network&amp;body=Hi%20Luca%2C%0A%0A">swglandcare@gmail.com</a><br><a href="https://swglandcare.org.au/" target="_blank" rel="noopener">swglandcare.org.au</a></p>
+ </div>
+ <div>
+  <h2 class="fh">The network</h2>
+  <p>South West Goulburn Landcare Network is a member organisation of Landcare Victoria, and includes Glenaroua Land Management Group and Dabyminga Landcare Incorporated.</p>
+ </div>
+ <div>
+  <h2 class="fh">Subscribe</h2>
+  <p><a class="btn light" href="https://eepurl.com/i824Ok" target="_blank" rel="noopener">Subscribe to the newsletter</a></p>
+ </div>
+</div>
+<div class="flogos">
+ <img src="assets/img/logo-swgln.jpg" alt="South West Goulburn Landcare Network" width="520" height="211" loading="lazy" decoding="async">
+ <img src="assets/img/logo-glenaroua.jpg" alt="Glenaroua Land Management Group" width="700" height="297" loading="lazy" decoding="async">
+ <img src="assets/img/logo-dabyminga.jpg" alt="Dabyminga Landcare Incorporated" width="700" height="297" loading="lazy" decoding="async">
+</div>
+<p class="disc">The views and recommendations in this newsletter are the facilitator's own and do not necessarily reflect those of the South West Goulburn Landcare Network, its committee or its member groups. Published October 2026.</p>
+</div></footer>
+
+<script>
+(function(){
+ var b=document.getElementById('bar');
+ function u(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;
+  b.style.width=(m>0?(h.scrollTop/m)*100:0)+'%';}
+ addEventListener('scroll',u,{passive:true});u();
+ // Mark the article in view in the side contents.
+ var links={};[].forEach.call(document.querySelectorAll('.toc-side a[href^="#"]'),function(a){links[a.getAttribute('href').slice(1)]=a;});
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=links[e.target.id];if(!a)return;
+   if(e.isIntersecting){for(var k in links)links[k].removeAttribute('aria-current');a.setAttribute('aria-current','true');}});},{rootMargin:'-40% 0px -55% 0px'});
+  for(var id in links){var s=document.getElementById(id);if(s)io.observe(s);}
+ }
+ // Close the phone contents after a choice.
+ [].forEach.call(document.querySelectorAll('.toc-m a'),function(a){a.addEventListener('click',function(){a.closest('details').open=false;});});
+ // The display fonts change text metrics when they arrive, which lands a #hash link in the wrong place. Re-aim once they settle.
+ function aim(){if(!location.hash)return;var t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();}
+ if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){setTimeout(aim,60);});}
+ addEventListener('load',function(){setTimeout(aim,120);});
+})();
+</script>
+</body>
+</html>

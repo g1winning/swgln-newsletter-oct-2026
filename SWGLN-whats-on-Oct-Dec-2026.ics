@@ -1,0 +1,171 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//South West Goulburn Landcare Network//Newsletter October 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SWGLN what's on, October to December 2026
+X-WR-TIMEZONE:Australia/Melbourne
+BEGIN:VTIMEZONE
+TZID:Australia/Melbourne
+BEGIN:STANDARD
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:swgln-oct2026-1@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261023T170000
+DTEND;TZID=Australia/Melbourne:20261023T190000
+SUMMARY:40 Years of Landcare\, Goulburn Broken celebration
+LOCATION:Seven Creeks Hotel\, 2 Tarcombe St\, Euroa
+DESCRIPTION:Free\, finger food. RSVP form\nMore: https://forms.cloud.micros
+ oft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeqdMboOZ9k3erumsKJpOqSr_TDNOOjt
+ URUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u
+URL:https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=2oR_VFyZOkKSeq
+ dMboOZ9k3erumsKJpOqSr_TDNOOjtURUg1RlFWRERUTjFTVTdSWTc4VUlZNUJVTS4u
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-2@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261024T093000
+DTEND;TZID=Australia/Melbourne:20261024T120000
+SUMMARY:Native plant propagation with Kate Toogood
+LOCATION:35 Cleves Rd North\, Upper Plenty
+DESCRIPTION:Cuttings and division\, take a plant home. Book\nMore: https://
+ events.humanitix.com/native-plant-propagation-workshop-95s39p8w
+URL:https://events.humanitix.com/native-plant-propagation-workshop-95s39p8w
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-3@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261025T093000
+DTEND;TZID=Australia/Melbourne:20261025T133000
+SUMMARY:Willowmavin Biolink Blitz\, the fourth
+LOCATION:Willowmavin\, site sent on registration
+DESCRIPTION:Then every fortnight to Christmas. Register\nMore: https://even
+ ts.humanitix.com/willowmavin-4th-biolink-blitz
+URL:https://events.humanitix.com/willowmavin-4th-biolink-blitz
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-4@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261027T180000
+SUMMARY:BEAM Mitchell Environment Group AGM and dinner
+LOCATION:Kilmore Library\, 12 Sydney St
+DESCRIPTION:Cathy Olive on native garden plants. RSVP\nMore: https://www.be
+ am.org.au/events-1/community-dinner-and-annual-general-meeting-2026
+URL:https://www.beam.org.au/events-1/community-dinner-and-annual-general-me
+ eting-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-5@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261107T100000
+DTEND;TZID=Australia/Melbourne:20261107T160000
+SUMMARY:Mountains to Rivers Festival\, wawa biik
+LOCATION:Tahbilk Estate\, Nagambie
+DESCRIPTION:Storytelling\, wetland walks\, makers market. Tickets\nMore: ht
+ tps://wawabiik.com.au/mtrfest/
+URL:https://wawabiik.com.au/mtrfest/
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-6@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261108T091500
+DTEND;TZID=Australia/Melbourne:20261108T131500
+SUMMARY:Wildlife\, Fungi and Fire conference
+LOCATION:Euroa Community Conference Centre\, Memorial Oval
+DESCRIPTION:$25\, free for pensioners\, students and fire-affected landhold
+ ers\nMore: https://events.humanitix.com/wildlife-fungi-and-fire
+URL:https://events.humanitix.com/wildlife-fungi-and-fire
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-7@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261108T100000
+DTEND;TZID=Australia/Melbourne:20261108T113000
+SUMMARY:What happens if insects go extinct? For children
+LOCATION:Broadford Living and Learning Centre
+DESCRIPTION:Sunday Creek Dry Creek's Streamside group. Book with ages\nCont
+ act: scdclandcaregroup@gmail.com
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-8@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Lyndale Park field day\, walk and Covram records
+LOCATION:465 Tallarook-Pyalong Rd\, Tallarook
+DESCRIPTION:Free\, lunch\, times with your booking\nContact: Luca Brew\, 04
+ 09 515 630\, swglandcare@gmail.com
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-9@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261114T100000
+SUMMARY:Scent detection dog workshop
+LOCATION:Strath Creek Hall\, 10 Ferguson St
+DESCRIPTION:Free\, light lunch\, places limited. Chris Cobern\nContact: ugl
+ n.projects@ugln.net\, 0413 855 490
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-10@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261115T160000
+SUMMARY:Dabyminga Landcare AGM
+LOCATION:Tallarook\, venue in Mark South's newsletter
+DESCRIPTION:Hall booked out. New members welcome
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-11@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261119T183000
+SUMMARY:Glenaroua Land Management Group meeting
+LOCATION:Glenaroua fire shed
+DESCRIPTION:BYO barbecue\, meeting 7.30pm\, soil moisture probes\nContact: 
+ swglandcare@gmail.com
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-12@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261121T093000
+DTEND;TZID=Australia/Melbourne:20261121T143000
+SUMMARY:Meet the Farmer\, National Agriculture Day
+LOCATION:The Shack\, 1240 Wallan-Whittlesea Rd\, Upper Plenty
+DESCRIPTION:Produce stalls\, speakers. Register\nMore: https://events.human
+ itix.com/upper-plenty-agday
+URL:https://events.humanitix.com/upper-plenty-agday
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-13@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261129T120000
+SUMMARY:Joint Landcare Christmas party
+LOCATION:Broadford Living and Learning Centre
+DESCRIPTION:Willowmavin\, Sunday Creek Dry Creek\, Nulla Vale Pyalong West 
+ and Dabyminga. Bring a plate. RSVP\nContact: Leanne Cassar\, secretary@wil
+ lowmavinlc.org.au
+END:VEVENT
+BEGIN:VEVENT
+UID:swgln-oct2026-14@swglandcare.org.au
+DTSTAMP:20261019T000000Z
+DTSTART;TZID=Australia/Melbourne:20261212T090000
+DTEND;TZID=Australia/Melbourne:20261212T120000
+SUMMARY:Detox Your Home
+LOCATION:Seymour Resource Recovery Centre
+DESCRIPTION:Free household chemical disposal\, register\nMore: https://www.
+ mitchellshire.vic.gov.au/events/detox-your-home-seymour
+URL:https://www.mitchellshire.vic.gov.au/events/detox-your-home-seymour
+END:VEVENT
+END:VCALENDAR
